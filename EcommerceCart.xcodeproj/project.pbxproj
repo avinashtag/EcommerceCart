@@ -9,13 +9,18 @@
 /* Begin PBXBuildFile section */
 		E121DADF2C897425007D06C9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E121DADE2C897425007D06C9 /* AppDelegate.swift */; };
 		E121DAE12C897425007D06C9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E121DAE02C897425007D06C9 /* SceneDelegate.swift */; };
-		E121DAE32C897425007D06C9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E121DAE22C897425007D06C9 /* ViewController.swift */; };
 		E121DAE62C897425007D06C9 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = E121DAE52C897425007D06C9 /* Base */; };
 		E121DAE82C897428007D06C9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E121DAE72C897428007D06C9 /* Assets.xcassets */; };
 		E121DAEB2C897428007D06C9 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = E121DAEA2C897428007D06C9 /* Base */; };
 		E121DAF62C897428007D06C9 /* EcommerceCartTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E121DAF52C897428007D06C9 /* EcommerceCartTests.swift */; };
 		E121DB002C897428007D06C9 /* EcommerceCartUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E121DAFF2C897428007D06C9 /* EcommerceCartUITests.swift */; };
 		E121DB022C897428007D06C9 /* EcommerceCartUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E121DB012C897428007D06C9 /* EcommerceCartUITestsLaunchTests.swift */; };
+		E121DB102C8974C6007D06C9 /* RegistrationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E121DB0F2C8974C6007D06C9 /* RegistrationViewController.swift */; };
+		E121DB112C8974C6007D06C9 /* RegistrationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E121DB0F2C8974C6007D06C9 /* RegistrationViewController.swift */; };
+		E121DB122C8974C6007D06C9 /* RegistrationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E121DB0F2C8974C6007D06C9 /* RegistrationViewController.swift */; };
+		E121DB142C89796D007D06C9 /* SignUpFormViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E121DB132C89796D007D06C9 /* SignUpFormViewController.swift */; };
+		E121DB152C89796D007D06C9 /* SignUpFormViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E121DB132C89796D007D06C9 /* SignUpFormViewController.swift */; };
+		E121DB162C89796D007D06C9 /* SignUpFormViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E121DB132C89796D007D06C9 /* SignUpFormViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,7 +44,6 @@
 		E121DADB2C897425007D06C9 /* EcommerceCart.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EcommerceCart.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E121DADE2C897425007D06C9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E121DAE02C897425007D06C9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		E121DAE22C897425007D06C9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		E121DAE52C897425007D06C9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E121DAE72C897428007D06C9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E121DAEA2C897428007D06C9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -49,6 +53,8 @@
 		E121DAFB2C897428007D06C9 /* EcommerceCartUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EcommerceCartUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E121DAFF2C897428007D06C9 /* EcommerceCartUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EcommerceCartUITests.swift; sourceTree = "<group>"; };
 		E121DB012C897428007D06C9 /* EcommerceCartUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EcommerceCartUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		E121DB0F2C8974C6007D06C9 /* RegistrationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationViewController.swift; sourceTree = "<group>"; };
+		E121DB132C89796D007D06C9 /* SignUpFormViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpFormViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,7 +107,7 @@
 			children = (
 				E121DADE2C897425007D06C9 /* AppDelegate.swift */,
 				E121DAE02C897425007D06C9 /* SceneDelegate.swift */,
-				E121DAE22C897425007D06C9 /* ViewController.swift */,
+				E121DB0E2C89749C007D06C9 /* Home  */,
 				E121DAE42C897425007D06C9 /* Main.storyboard */,
 				E121DAE72C897428007D06C9 /* Assets.xcassets */,
 				E121DAE92C897428007D06C9 /* LaunchScreen.storyboard */,
@@ -125,6 +131,15 @@
 				E121DB012C897428007D06C9 /* EcommerceCartUITestsLaunchTests.swift */,
 			);
 			path = EcommerceCartUITests;
+			sourceTree = "<group>";
+		};
+		E121DB0E2C89749C007D06C9 /* Home  */ = {
+			isa = PBXGroup;
+			children = (
+				E121DB0F2C8974C6007D06C9 /* RegistrationViewController.swift */,
+				E121DB132C89796D007D06C9 /* SignUpFormViewController.swift */,
+			);
+			path = "Home ";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -258,8 +273,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E121DAE32C897425007D06C9 /* ViewController.swift in Sources */,
+				E121DB102C8974C6007D06C9 /* RegistrationViewController.swift in Sources */,
 				E121DADF2C897425007D06C9 /* AppDelegate.swift in Sources */,
+				E121DB142C89796D007D06C9 /* SignUpFormViewController.swift in Sources */,
 				E121DAE12C897425007D06C9 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -268,6 +284,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E121DB112C8974C6007D06C9 /* RegistrationViewController.swift in Sources */,
+				E121DB152C89796D007D06C9 /* SignUpFormViewController.swift in Sources */,
 				E121DAF62C897428007D06C9 /* EcommerceCartTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -276,7 +294,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E121DB122C8974C6007D06C9 /* RegistrationViewController.swift in Sources */,
 				E121DB002C897428007D06C9 /* EcommerceCartUITests.swift in Sources */,
+				E121DB162C89796D007D06C9 /* SignUpFormViewController.swift in Sources */,
 				E121DB022C897428007D06C9 /* EcommerceCartUITestsLaunchTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
