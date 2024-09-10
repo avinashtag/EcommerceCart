@@ -21,6 +21,7 @@
 		E121DB142C89796D007D06C9 /* SignUpFormViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E121DB132C89796D007D06C9 /* SignUpFormViewController.swift */; };
 		E121DB152C89796D007D06C9 /* SignUpFormViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E121DB132C89796D007D06C9 /* SignUpFormViewController.swift */; };
 		E121DB162C89796D007D06C9 /* SignUpFormViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E121DB132C89796D007D06C9 /* SignUpFormViewController.swift */; };
+		EAB185F82C9072F600700320 /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAB185F72C9072F600700320 /* Helper.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +56,7 @@
 		E121DB012C897428007D06C9 /* EcommerceCartUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EcommerceCartUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		E121DB0F2C8974C6007D06C9 /* RegistrationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationViewController.swift; sourceTree = "<group>"; };
 		E121DB132C89796D007D06C9 /* SignUpFormViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpFormViewController.swift; sourceTree = "<group>"; };
+		EAB185F72C9072F600700320 /* Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +107,7 @@
 		E121DADD2C897425007D06C9 /* EcommerceCart */ = {
 			isa = PBXGroup;
 			children = (
+				EAB185F62C90729000700320 /* Utility */,
 				E121DADE2C897425007D06C9 /* AppDelegate.swift */,
 				E121DAE02C897425007D06C9 /* SceneDelegate.swift */,
 				E121DB0E2C89749C007D06C9 /* Home  */,
@@ -140,6 +143,14 @@
 				E121DB132C89796D007D06C9 /* SignUpFormViewController.swift */,
 			);
 			path = "Home ";
+			sourceTree = "<group>";
+		};
+		EAB185F62C90729000700320 /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				EAB185F72C9072F600700320 /* Helper.swift */,
+			);
+			path = Utility;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -275,6 +286,7 @@
 			files = (
 				E121DB102C8974C6007D06C9 /* RegistrationViewController.swift in Sources */,
 				E121DADF2C897425007D06C9 /* AppDelegate.swift in Sources */,
+				EAB185F82C9072F600700320 /* Helper.swift in Sources */,
 				E121DB142C89796D007D06C9 /* SignUpFormViewController.swift in Sources */,
 				E121DAE12C897425007D06C9 /* SceneDelegate.swift in Sources */,
 			);

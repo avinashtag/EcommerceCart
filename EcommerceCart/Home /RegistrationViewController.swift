@@ -34,7 +34,7 @@ class RegistrationViewController: UIViewController {
         // Get the new view controller using segue.destination.
         // Pass the selected object to the new view controller.
         if segue.identifier == "showSignUpForm"{
-            guard let signupFormviewController = segue.destination as? SignUpFormViewController else { return }
+            guard segue.destination is SignUpFormViewController else { return }
 //            signupFormviewController.
         }
     }
