@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "09246450-97C0-4A9E-8393-37EE32D5C9F2"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "0A6247BC-2FD8-43E9-81E3-2560B38B8E8F"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "EcommerceCart/Utility/Client.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "115"
+            endingLineNumber = "115"
+            landmarkName = "fetch(with:httpMethod:body:decoder:completion:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "AA4C82E4-6BA2-4CE0-832C-2D3DBB300259"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "EcommerceCart/Home /SignUpFormViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "94"
+            endingLineNumber = "94"
+            landmarkName = "fetchProducts()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "9FACE96D-D2A7-434D-89F4-1E48FEC3E032"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "EcommerceCart/Utility/Endpoint.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "26"
+            endingLineNumber = "26"
+            landmarkName = "data(for:method:encodable:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "5D974EDB-2AC9-4AFD-9AFB-0F4EDF16C632"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "EcommerceCart/Utility/Endpoint.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "43"
+            endingLineNumber = "43"
+            landmarkName = "data(for:method:encodable:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "5D974EDB-2AC9-4AFD-9AFB-0F4EDF16C632 - 51855f412ac133b0"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(1) suspend resume partial function for EcommerceCart.Network.data(for: EcommerceCart.APICalls, method: EcommerceCart.HTTPMethod, encodable: Swift.Encodable) async throws -&gt; (Foundation.Data, __C.NSURLResponse)"
+                  moduleName = "EcommerceCart"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/avinash/Downloads/EcommerceCart/EcommerceCart/Utility/Endpoint.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "43"
+                  endingLineNumber = "43">
+               </Location>
+               <Location
+                  uuid = "5D974EDB-2AC9-4AFD-9AFB-0F4EDF16C632 - 7bdada2bd85615b8"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(2) await resume partial function for EcommerceCart.Network.data(for: EcommerceCart.APICalls, method: EcommerceCart.HTTPMethod, encodable: Swift.Encodable) async throws -&gt; (Foundation.Data, __C.NSURLResponse)"
+                  moduleName = "EcommerceCart"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/avinash/Downloads/EcommerceCart/EcommerceCart/Utility/Endpoint.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "43"
+                  endingLineNumber = "43">
+               </Location>
+               <Location
+                  uuid = "5D974EDB-2AC9-4AFD-9AFB-0F4EDF16C632 - 7aecc4076497ef8e"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(3) suspend resume partial function for EcommerceCart.Network.data(for: EcommerceCart.APICalls, method: EcommerceCart.HTTPMethod, encodable: Swift.Encodable) async throws -&gt; (Foundation.Data, __C.NSURLResponse)"
+                  moduleName = "EcommerceCart"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/avinash/Downloads/EcommerceCart/EcommerceCart/Utility/Endpoint.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "43"
+                  endingLineNumber = "43">
+               </Location>
+               <Location
+                  uuid = "5D974EDB-2AC9-4AFD-9AFB-0F4EDF16C632 - f47f666ba7f098f"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(4) suspend resume partial function for EcommerceCart.Network.data(for: EcommerceCart.APICalls, method: EcommerceCart.HTTPMethod, encodable: Swift.Encodable) async throws -&gt; (Foundation.Data, __C.NSURLResponse)"
+                  moduleName = "EcommerceCart"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/avinash/Downloads/EcommerceCart/EcommerceCart/Utility/Endpoint.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "43"
+                  endingLineNumber = "43">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>

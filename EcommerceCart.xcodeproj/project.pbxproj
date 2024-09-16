@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E119354C2C97F586004D84F9 /* SignInFormViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E119354B2C97F586004D84F9 /* SignInFormViewController.swift */; };
+		E119354D2C97F586004D84F9 /* SignInFormViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E119354B2C97F586004D84F9 /* SignInFormViewController.swift */; };
+		E119354E2C97F586004D84F9 /* SignInFormViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E119354B2C97F586004D84F9 /* SignInFormViewController.swift */; };
 		E121DADF2C897425007D06C9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E121DADE2C897425007D06C9 /* AppDelegate.swift */; };
 		E121DAE12C897425007D06C9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E121DAE02C897425007D06C9 /* SceneDelegate.swift */; };
 		E121DAE62C897425007D06C9 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = E121DAE52C897425007D06C9 /* Base */; };
@@ -48,6 +51,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		E119354B2C97F586004D84F9 /* SignInFormViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInFormViewController.swift; sourceTree = "<group>"; };
 		E121DADB2C897425007D06C9 /* EcommerceCart.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EcommerceCart.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E121DADE2C897425007D06C9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E121DAE02C897425007D06C9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -151,6 +155,7 @@
 				E121DB132C89796D007D06C9 /* SignUpFormViewController.swift */,
 				EA55D4C72C970BA400028641 /* AuthTableViewCell.swift */,
 				EA55D4CB2C970BD100028641 /* LoginTableViewController.swift */,
+				E119354B2C97F586004D84F9 /* SignInFormViewController.swift */,
 			);
 			path = "Home ";
 			sourceTree = "<group>";
@@ -298,6 +303,7 @@
 				E121DADF2C897425007D06C9 /* AppDelegate.swift in Sources */,
 				EA55D4C82C970BA400028641 /* AuthTableViewCell.swift in Sources */,
 				EAB185F82C9072F600700320 /* Helper.swift in Sources */,
+				E119354C2C97F586004D84F9 /* SignInFormViewController.swift in Sources */,
 				E121DB142C89796D007D06C9 /* SignUpFormViewController.swift in Sources */,
 				E121DAE12C897425007D06C9 /* SceneDelegate.swift in Sources */,
 				EA55D4CC2C970BD100028641 /* LoginTableViewController.swift in Sources */,
@@ -310,6 +316,7 @@
 			files = (
 				EA55D4CD2C970BD100028641 /* LoginTableViewController.swift in Sources */,
 				E121DB112C8974C6007D06C9 /* RegistrationViewController.swift in Sources */,
+				E119354D2C97F586004D84F9 /* SignInFormViewController.swift in Sources */,
 				E121DB152C89796D007D06C9 /* SignUpFormViewController.swift in Sources */,
 				E121DAF62C897428007D06C9 /* EcommerceCartTests.swift in Sources */,
 				EA55D4C92C970BA400028641 /* AuthTableViewCell.swift in Sources */,
@@ -324,6 +331,7 @@
 				E121DB122C8974C6007D06C9 /* RegistrationViewController.swift in Sources */,
 				E121DB002C897428007D06C9 /* EcommerceCartUITests.swift in Sources */,
 				E121DB162C89796D007D06C9 /* SignUpFormViewController.swift in Sources */,
+				E119354E2C97F586004D84F9 /* SignInFormViewController.swift in Sources */,
 				E121DB022C897428007D06C9 /* EcommerceCartUITestsLaunchTests.swift in Sources */,
 				EA55D4CE2C970BD100028641 /* LoginTableViewController.swift in Sources */,
 			);

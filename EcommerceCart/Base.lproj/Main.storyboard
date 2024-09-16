@@ -566,9 +566,221 @@ Please login or signup.</string>
             </objects>
             <point key="canvasLocation" x="1978" y="687"/>
         </scene>
+        <!--Sign In Form View Controller-->
+        <scene sceneID="cpY-se-qf2">
+            <objects>
+                <viewController storyboardIdentifier="SignInFormViewController" id="sve-Xo-2m4" customClass="SignInFormViewController" customModule="EcommerceCart" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="mou-z2-aAe">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="qhs-5u-MCI">
+                                <rect key="frame" x="0.0" y="59" width="393" height="759"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="SignInFormHeader" id="rOE-O4-6jf" customClass="SignInFormHeader" customModule="EcommerceCart" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="50" width="393" height="115.33333587646484"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="rOE-O4-6jf" id="ies-Mw-qur">
+                                            <rect key="frame" x="0.0" y="0.0" width="393" height="115.33333587646484"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Wlcome back!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RxV-RY-2oe">
+                                                    <rect key="frame" x="15" y="4.9999999999999982" width="363" height="30.333333333333329"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="30" id="rZG-Ie-RWL"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Put your data here" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rf4-d7-jEh">
+                                                    <rect key="frame" x="15" y="40.333333333333336" width="363" height="25.000000000000007"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="25" id="9Pm-Sp-etA"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                                    <color key="textColor" name="AccentColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="trailing" secondItem="Rf4-d7-jEh" secondAttribute="trailing" constant="15" id="1CE-to-cvO"/>
+                                                <constraint firstItem="Rf4-d7-jEh" firstAttribute="top" secondItem="RxV-RY-2oe" secondAttribute="bottom" constant="5" id="D15-ve-Tyv"/>
+                                                <constraint firstAttribute="trailing" secondItem="RxV-RY-2oe" secondAttribute="trailing" constant="15" id="FT4-re-igI"/>
+                                                <constraint firstAttribute="bottom" secondItem="Rf4-d7-jEh" secondAttribute="bottom" constant="50" id="GvZ-uh-05l"/>
+                                                <constraint firstItem="Rf4-d7-jEh" firstAttribute="leading" secondItem="ies-Mw-qur" secondAttribute="leading" constant="15" id="Qy8-wt-Qbx"/>
+                                                <constraint firstItem="RxV-RY-2oe" firstAttribute="leading" secondItem="ies-Mw-qur" secondAttribute="leading" constant="15" id="gST-He-sM5"/>
+                                                <constraint firstItem="RxV-RY-2oe" firstAttribute="top" secondItem="ies-Mw-qur" secondAttribute="top" constant="5" id="gvz-tY-nrZ"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="SignInFormCell" id="UEQ-7F-3AP" customClass="SignInFormCell" customModule="EcommerceCart" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="165.33333587646484" width="393" height="75.333335876464844"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="UEQ-7F-3AP" id="KFv-bQ-aAI">
+                                            <rect key="frame" x="0.0" y="0.0" width="393" height="75.333335876464844"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Email" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Te4-n0-XXM">
+                                                    <rect key="frame" x="15" y="5" width="363" height="25"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="25" id="5JX-4l-WLc"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="ennter your emailID" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ecp-Ld-JCf">
+                                                    <rect key="frame" x="15" y="35" width="363" height="35.333333333333343"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="35" id="jlX-tV-G86"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <textInputTraits key="textInputTraits"/>
+                                                    <connections>
+                                                        <outlet property="delegate" destination="UEQ-7F-3AP" id="qeK-X3-fe5"/>
+                                                    </connections>
+                                                </textField>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="Te4-n0-XXM" firstAttribute="leading" secondItem="KFv-bQ-aAI" secondAttribute="leading" constant="15" id="2G9-xg-3ce"/>
+                                                <constraint firstItem="ecp-Ld-JCf" firstAttribute="top" secondItem="Te4-n0-XXM" secondAttribute="bottom" constant="5" id="A2K-Pn-Ynx"/>
+                                                <constraint firstItem="ecp-Ld-JCf" firstAttribute="trailing" secondItem="Te4-n0-XXM" secondAttribute="trailing" id="AKq-Hp-F5s"/>
+                                                <constraint firstAttribute="bottom" secondItem="ecp-Ld-JCf" secondAttribute="bottom" constant="5" id="Cmw-cV-WnO"/>
+                                                <constraint firstItem="ecp-Ld-JCf" firstAttribute="leading" secondItem="Te4-n0-XXM" secondAttribute="leading" id="bQI-OB-3FJ"/>
+                                                <constraint firstItem="ecp-Ld-JCf" firstAttribute="top" secondItem="Te4-n0-XXM" secondAttribute="bottom" constant="5" id="bjC-Bf-Rsb"/>
+                                                <constraint firstItem="ecp-Ld-JCf" firstAttribute="top" secondItem="Te4-n0-XXM" secondAttribute="bottom" constant="5" id="hxb-G0-4g1"/>
+                                                <constraint firstAttribute="trailing" secondItem="Te4-n0-XXM" secondAttribute="trailing" constant="15" id="iAc-n3-UHV"/>
+                                                <constraint firstItem="Te4-n0-XXM" firstAttribute="top" secondItem="KFv-bQ-aAI" secondAttribute="top" constant="5" id="uk7-P8-FYw"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="textField" destination="ecp-Ld-JCf" id="yWq-FY-3l2"/>
+                                            <outlet property="title" destination="Te4-n0-XXM" id="kNE-0w-Ofa"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="SignInFormFooter" id="M6X-m3-l8i" customClass="SignInFormFooter" customModule="EcommerceCart" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="240.66667175292969" width="393" height="45.333332061767578"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="M6X-m3-l8i" id="AAG-bn-ybJ">
+                                            <rect key="frame" x="0.0" y="0.0" width="393" height="45.333332061767578"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TL7-jn-AbI">
+                                                    <rect key="frame" x="15" y="5" width="363" height="35.333333333333336"/>
+                                                    <color key="backgroundColor" name="AccentColor"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="35" id="HCJ-lq-WW6"/>
+                                                    </constraints>
+                                                    <state key="normal" title="Button"/>
+                                                    <buttonConfiguration key="configuration" style="plain" title="SignIn">
+                                                        <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </buttonConfiguration>
+                                                    <connections>
+                                                        <action selector="doSignIn:" destination="M6X-m3-l8i" eventType="touchUpInside" id="qH6-Zh-Qv1"/>
+                                                    </connections>
+                                                </button>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="TL7-jn-AbI" firstAttribute="top" secondItem="AAG-bn-ybJ" secondAttribute="top" constant="5" id="ENL-Qu-o0e"/>
+                                                <constraint firstAttribute="trailing" secondItem="TL7-jn-AbI" secondAttribute="trailing" constant="15" id="Ubm-QU-EA3"/>
+                                                <constraint firstAttribute="bottom" secondItem="TL7-jn-AbI" secondAttribute="bottom" constant="5" id="ajb-9Z-B64"/>
+                                                <constraint firstItem="TL7-jn-AbI" firstAttribute="leading" secondItem="AAG-bn-ybJ" secondAttribute="leading" constant="15" id="vbw-Cc-PwQ"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="3iB-lj-g9H"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="3iB-lj-g9H" firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="qhs-5u-MCI" secondAttribute="bottom" id="GPl-Tp-TWk"/>
+                            <constraint firstItem="qhs-5u-MCI" firstAttribute="centerY" secondItem="mou-z2-aAe" secondAttribute="centerY" id="MiX-ge-ZVW"/>
+                            <constraint firstItem="qhs-5u-MCI" firstAttribute="leading" secondItem="3iB-lj-g9H" secondAttribute="leading" id="V2b-xj-iJs"/>
+                            <constraint firstItem="qhs-5u-MCI" firstAttribute="top" relation="greaterThanOrEqual" secondItem="3iB-lj-g9H" secondAttribute="top" id="a8S-eQ-fTo"/>
+                            <constraint firstItem="3iB-lj-g9H" firstAttribute="trailing" secondItem="qhs-5u-MCI" secondAttribute="trailing" id="cd9-1J-S5w"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mzg-4O-mwe" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2726" y="687"/>
+        </scene>
+        <!--Profile-->
+        <scene sceneID="tBj-oD-2Qs">
+            <objects>
+                <viewController id="Sqc-Kx-TVk" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="dXS-fi-jOP">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="yze-N2-H9U"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Profile" selectedImage="person.fill" catalog="system" id="9LY-zb-mtQ"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ToN-IU-U1W" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1807" y="2794"/>
+        </scene>
+        <!--Cart-->
+        <scene sceneID="mcb-00-1C5">
+            <objects>
+                <viewController id="2dB-3x-ntO" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="TZ5-FK-gPs">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="rgM-nL-Sbr"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Cart" selectedImage="figure.martial.arts" catalog="system" id="GI2-4s-GE9"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Rca-dM-bh4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1808" y="2091"/>
+        </scene>
+        <!--Home-->
+        <scene sceneID="nPk-uA-l83">
+            <objects>
+                <viewController id="MaQ-ru-h24" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="HCB-QW-e6z">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="Pf4-8A-Qz7"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Home" selectedImage="homekit" catalog="system" id="MSU-WD-aP3"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="04r-ej-kZe" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1808" y="1484"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="z25-Ja-xp0">
+            <objects>
+                <tabBarController id="IZn-Sq-dXw" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="ABp-Bv-Pvg">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="MaQ-ru-h24" kind="relationship" relationship="viewControllers" id="NuS-wK-en3"/>
+                        <segue destination="2dB-3x-ntO" kind="relationship" relationship="viewControllers" id="ikb-d7-NHL"/>
+                        <segue destination="Sqc-Kx-TVk" kind="relationship" relationship="viewControllers" id="FWg-L4-lZu"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="baY-n0-koH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="902" y="1788"/>
+        </scene>
     </scenes>
     <resources>
         <image name="Registration" width="400" height="450"/>
+        <image name="figure.martial.arts" catalog="system" width="110" height="128"/>
+        <image name="homekit" catalog="system" width="128" height="104"/>
+        <image name="person.fill" catalog="system" width="128" height="120"/>
         <namedColor name="AccentColor">
             <color red="0.36078431372549019" green="0.36862745098039218" blue="0.57647058823529407" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
