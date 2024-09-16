@@ -21,6 +21,12 @@
 		E121DB142C89796D007D06C9 /* SignUpFormViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E121DB132C89796D007D06C9 /* SignUpFormViewController.swift */; };
 		E121DB152C89796D007D06C9 /* SignUpFormViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E121DB132C89796D007D06C9 /* SignUpFormViewController.swift */; };
 		E121DB162C89796D007D06C9 /* SignUpFormViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E121DB132C89796D007D06C9 /* SignUpFormViewController.swift */; };
+		EA55D4C82C970BA400028641 /* AuthTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA55D4C72C970BA400028641 /* AuthTableViewCell.swift */; };
+		EA55D4C92C970BA400028641 /* AuthTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA55D4C72C970BA400028641 /* AuthTableViewCell.swift */; };
+		EA55D4CA2C970BA400028641 /* AuthTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA55D4C72C970BA400028641 /* AuthTableViewCell.swift */; };
+		EA55D4CC2C970BD100028641 /* LoginTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA55D4CB2C970BD100028641 /* LoginTableViewController.swift */; };
+		EA55D4CD2C970BD100028641 /* LoginTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA55D4CB2C970BD100028641 /* LoginTableViewController.swift */; };
+		EA55D4CE2C970BD100028641 /* LoginTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA55D4CB2C970BD100028641 /* LoginTableViewController.swift */; };
 		EAB185F82C9072F600700320 /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAB185F72C9072F600700320 /* Helper.swift */; };
 /* End PBXBuildFile section */
 
@@ -56,6 +62,8 @@
 		E121DB012C897428007D06C9 /* EcommerceCartUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EcommerceCartUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		E121DB0F2C8974C6007D06C9 /* RegistrationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationViewController.swift; sourceTree = "<group>"; };
 		E121DB132C89796D007D06C9 /* SignUpFormViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpFormViewController.swift; sourceTree = "<group>"; };
+		EA55D4C72C970BA400028641 /* AuthTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthTableViewCell.swift; sourceTree = "<group>"; };
+		EA55D4CB2C970BD100028641 /* LoginTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginTableViewController.swift; sourceTree = "<group>"; };
 		EAB185F72C9072F600700320 /* Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -141,6 +149,8 @@
 			children = (
 				E121DB0F2C8974C6007D06C9 /* RegistrationViewController.swift */,
 				E121DB132C89796D007D06C9 /* SignUpFormViewController.swift */,
+				EA55D4C72C970BA400028641 /* AuthTableViewCell.swift */,
+				EA55D4CB2C970BD100028641 /* LoginTableViewController.swift */,
 			);
 			path = "Home ";
 			sourceTree = "<group>";
@@ -286,9 +296,11 @@
 			files = (
 				E121DB102C8974C6007D06C9 /* RegistrationViewController.swift in Sources */,
 				E121DADF2C897425007D06C9 /* AppDelegate.swift in Sources */,
+				EA55D4C82C970BA400028641 /* AuthTableViewCell.swift in Sources */,
 				EAB185F82C9072F600700320 /* Helper.swift in Sources */,
 				E121DB142C89796D007D06C9 /* SignUpFormViewController.swift in Sources */,
 				E121DAE12C897425007D06C9 /* SceneDelegate.swift in Sources */,
+				EA55D4CC2C970BD100028641 /* LoginTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -296,9 +308,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EA55D4CD2C970BD100028641 /* LoginTableViewController.swift in Sources */,
 				E121DB112C8974C6007D06C9 /* RegistrationViewController.swift in Sources */,
 				E121DB152C89796D007D06C9 /* SignUpFormViewController.swift in Sources */,
 				E121DAF62C897428007D06C9 /* EcommerceCartTests.swift in Sources */,
+				EA55D4C92C970BA400028641 /* AuthTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -306,10 +320,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EA55D4CA2C970BA400028641 /* AuthTableViewCell.swift in Sources */,
 				E121DB122C8974C6007D06C9 /* RegistrationViewController.swift in Sources */,
 				E121DB002C897428007D06C9 /* EcommerceCartUITests.swift in Sources */,
 				E121DB162C89796D007D06C9 /* SignUpFormViewController.swift in Sources */,
 				E121DB022C897428007D06C9 /* EcommerceCartUITestsLaunchTests.swift in Sources */,
+				EA55D4CE2C970BD100028641 /* LoginTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
