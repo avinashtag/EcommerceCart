@@ -24,6 +24,18 @@
 		E121DB142C89796D007D06C9 /* SignUpFormViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E121DB132C89796D007D06C9 /* SignUpFormViewController.swift */; };
 		E121DB152C89796D007D06C9 /* SignUpFormViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E121DB132C89796D007D06C9 /* SignUpFormViewController.swift */; };
 		E121DB162C89796D007D06C9 /* SignUpFormViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E121DB132C89796D007D06C9 /* SignUpFormViewController.swift */; };
+		E17EB2462C9968500071A031 /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = E17EB2452C9968500071A031 /* Endpoint.swift */; };
+		E17EB2472C9968500071A031 /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = E17EB2452C9968500071A031 /* Endpoint.swift */; };
+		E17EB2482C9968500071A031 /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = E17EB2452C9968500071A031 /* Endpoint.swift */; };
+		E17EB24A2C99685F0071A031 /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = E17EB2492C99685F0071A031 /* Response.swift */; };
+		E17EB24B2C99685F0071A031 /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = E17EB2492C99685F0071A031 /* Response.swift */; };
+		E17EB24C2C99685F0071A031 /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = E17EB2492C99685F0071A031 /* Response.swift */; };
+		E17EB24E2C9968750071A031 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = E17EB24D2C9968750071A031 /* Constants.swift */; };
+		E17EB24F2C9968750071A031 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = E17EB24D2C9968750071A031 /* Constants.swift */; };
+		E17EB2502C9968750071A031 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = E17EB24D2C9968750071A031 /* Constants.swift */; };
+		E17EB2522C996EBE0071A031 /* Products.swift in Sources */ = {isa = PBXBuildFile; fileRef = E17EB2512C996EBE0071A031 /* Products.swift */; };
+		E17EB2532C996EBE0071A031 /* Products.swift in Sources */ = {isa = PBXBuildFile; fileRef = E17EB2512C996EBE0071A031 /* Products.swift */; };
+		E17EB2542C996EBE0071A031 /* Products.swift in Sources */ = {isa = PBXBuildFile; fileRef = E17EB2512C996EBE0071A031 /* Products.swift */; };
 		EA55D4C82C970BA400028641 /* AuthTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA55D4C72C970BA400028641 /* AuthTableViewCell.swift */; };
 		EA55D4C92C970BA400028641 /* AuthTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA55D4C72C970BA400028641 /* AuthTableViewCell.swift */; };
 		EA55D4CA2C970BA400028641 /* AuthTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA55D4C72C970BA400028641 /* AuthTableViewCell.swift */; };
@@ -66,6 +78,10 @@
 		E121DB012C897428007D06C9 /* EcommerceCartUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EcommerceCartUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		E121DB0F2C8974C6007D06C9 /* RegistrationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationViewController.swift; sourceTree = "<group>"; };
 		E121DB132C89796D007D06C9 /* SignUpFormViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpFormViewController.swift; sourceTree = "<group>"; };
+		E17EB2452C9968500071A031 /* Endpoint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Endpoint.swift; sourceTree = "<group>"; };
+		E17EB2492C99685F0071A031 /* Response.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Response.swift; sourceTree = "<group>"; };
+		E17EB24D2C9968750071A031 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		E17EB2512C996EBE0071A031 /* Products.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Products.swift; sourceTree = "<group>"; };
 		EA55D4C72C970BA400028641 /* AuthTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthTableViewCell.swift; sourceTree = "<group>"; };
 		EA55D4CB2C970BD100028641 /* LoginTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginTableViewController.swift; sourceTree = "<group>"; };
 		EAB185F72C9072F600700320 /* Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
@@ -156,6 +172,7 @@
 				EA55D4C72C970BA400028641 /* AuthTableViewCell.swift */,
 				EA55D4CB2C970BD100028641 /* LoginTableViewController.swift */,
 				E119354B2C97F586004D84F9 /* SignInFormViewController.swift */,
+				E17EB2512C996EBE0071A031 /* Products.swift */,
 			);
 			path = "Home ";
 			sourceTree = "<group>";
@@ -163,7 +180,10 @@
 		EAB185F62C90729000700320 /* Utility */ = {
 			isa = PBXGroup;
 			children = (
+				E17EB2452C9968500071A031 /* Endpoint.swift */,
 				EAB185F72C9072F600700320 /* Helper.swift */,
+				E17EB2492C99685F0071A031 /* Response.swift */,
+				E17EB24D2C9968750071A031 /* Constants.swift */,
 			);
 			path = Utility;
 			sourceTree = "<group>";
@@ -300,11 +320,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				E121DB102C8974C6007D06C9 /* RegistrationViewController.swift in Sources */,
+				E17EB24E2C9968750071A031 /* Constants.swift in Sources */,
+				E17EB2462C9968500071A031 /* Endpoint.swift in Sources */,
 				E121DADF2C897425007D06C9 /* AppDelegate.swift in Sources */,
 				EA55D4C82C970BA400028641 /* AuthTableViewCell.swift in Sources */,
+				E17EB24A2C99685F0071A031 /* Response.swift in Sources */,
 				EAB185F82C9072F600700320 /* Helper.swift in Sources */,
 				E119354C2C97F586004D84F9 /* SignInFormViewController.swift in Sources */,
 				E121DB142C89796D007D06C9 /* SignUpFormViewController.swift in Sources */,
+				E17EB2522C996EBE0071A031 /* Products.swift in Sources */,
 				E121DAE12C897425007D06C9 /* SceneDelegate.swift in Sources */,
 				EA55D4CC2C970BD100028641 /* LoginTableViewController.swift in Sources */,
 			);
@@ -314,12 +338,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E17EB24B2C99685F0071A031 /* Response.swift in Sources */,
+				E17EB2472C9968500071A031 /* Endpoint.swift in Sources */,
 				EA55D4CD2C970BD100028641 /* LoginTableViewController.swift in Sources */,
 				E121DB112C8974C6007D06C9 /* RegistrationViewController.swift in Sources */,
 				E119354D2C97F586004D84F9 /* SignInFormViewController.swift in Sources */,
 				E121DB152C89796D007D06C9 /* SignUpFormViewController.swift in Sources */,
 				E121DAF62C897428007D06C9 /* EcommerceCartTests.swift in Sources */,
+				E17EB2532C996EBE0071A031 /* Products.swift in Sources */,
 				EA55D4C92C970BA400028641 /* AuthTableViewCell.swift in Sources */,
+				E17EB24F2C9968750071A031 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -328,8 +356,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				EA55D4CA2C970BA400028641 /* AuthTableViewCell.swift in Sources */,
+				E17EB2542C996EBE0071A031 /* Products.swift in Sources */,
 				E121DB122C8974C6007D06C9 /* RegistrationViewController.swift in Sources */,
+				E17EB2482C9968500071A031 /* Endpoint.swift in Sources */,
 				E121DB002C897428007D06C9 /* EcommerceCartUITests.swift in Sources */,
+				E17EB24C2C99685F0071A031 /* Response.swift in Sources */,
+				E17EB2502C9968750071A031 /* Constants.swift in Sources */,
 				E121DB162C89796D007D06C9 /* SignUpFormViewController.swift in Sources */,
 				E119354E2C97F586004D84F9 /* SignInFormViewController.swift in Sources */,
 				E121DB022C897428007D06C9 /* EcommerceCartUITestsLaunchTests.swift in Sources */,
@@ -376,6 +408,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				API_ENDPOINT = fakestoreapi.com;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
@@ -439,6 +472,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				API_ENDPOINT = fakestoreapi.com;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
@@ -494,6 +528,7 @@
 		E121DB062C897428007D06C9 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				API_ENDPOINT = fakestoreapi.com;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -521,6 +556,7 @@
 		E121DB072C897428007D06C9 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				API_ENDPOINT = fakestoreapi.com;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
