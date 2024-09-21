@@ -27,6 +27,9 @@
 		E17A54682C9D3A5200C62762 /* LoginHeaderCellTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E17A54672C9D3A5200C62762 /* LoginHeaderCellTableViewCell.swift */; };
 		E17A54692C9D3A5200C62762 /* LoginHeaderCellTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E17A54672C9D3A5200C62762 /* LoginHeaderCellTableViewCell.swift */; };
 		E17A546A2C9D3A5200C62762 /* LoginHeaderCellTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E17A54672C9D3A5200C62762 /* LoginHeaderCellTableViewCell.swift */; };
+		E17A547C2C9E84A400C62762 /* ProductsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E17A547B2C9E84A400C62762 /* ProductsViewController.swift */; };
+		E17A547D2C9E84A400C62762 /* ProductsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E17A547B2C9E84A400C62762 /* ProductsViewController.swift */; };
+		E17A547E2C9E84A400C62762 /* ProductsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E17A547B2C9E84A400C62762 /* ProductsViewController.swift */; };
 		E17EB2462C9968500071A031 /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = E17EB2452C9968500071A031 /* Endpoint.swift */; };
 		E17EB2472C9968500071A031 /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = E17EB2452C9968500071A031 /* Endpoint.swift */; };
 		E17EB2482C9968500071A031 /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = E17EB2452C9968500071A031 /* Endpoint.swift */; };
@@ -82,6 +85,7 @@
 		E121DB0F2C8974C6007D06C9 /* RegistrationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationViewController.swift; sourceTree = "<group>"; };
 		E121DB132C89796D007D06C9 /* SignUpFormViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpFormViewController.swift; sourceTree = "<group>"; };
 		E17A54672C9D3A5200C62762 /* LoginHeaderCellTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginHeaderCellTableViewCell.swift; sourceTree = "<group>"; };
+		E17A547B2C9E84A400C62762 /* ProductsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsViewController.swift; sourceTree = "<group>"; };
 		E17EB2452C9968500071A031 /* Endpoint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Endpoint.swift; sourceTree = "<group>"; };
 		E17EB2492C99685F0071A031 /* Response.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Response.swift; sourceTree = "<group>"; };
 		E17EB24D2C9968750071A031 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
@@ -177,6 +181,7 @@
 				EA55D4CB2C970BD100028641 /* LoginTableViewController.swift */,
 				E17A54672C9D3A5200C62762 /* LoginHeaderCellTableViewCell.swift */,
 				E119354B2C97F586004D84F9 /* SignInFormViewController.swift */,
+				E17A547B2C9E84A400C62762 /* ProductsViewController.swift */,
 				E17EB2512C996EBE0071A031 /* Products.swift */,
 			);
 			path = "Home ";
@@ -326,6 +331,7 @@
 			files = (
 				E121DB102C8974C6007D06C9 /* RegistrationViewController.swift in Sources */,
 				E17EB24E2C9968750071A031 /* Constants.swift in Sources */,
+				E17A547C2C9E84A400C62762 /* ProductsViewController.swift in Sources */,
 				E17A54682C9D3A5200C62762 /* LoginHeaderCellTableViewCell.swift in Sources */,
 				E17EB2462C9968500071A031 /* Endpoint.swift in Sources */,
 				E121DADF2C897425007D06C9 /* AppDelegate.swift in Sources */,
@@ -350,6 +356,7 @@
 				E17A54692C9D3A5200C62762 /* LoginHeaderCellTableViewCell.swift in Sources */,
 				E121DB112C8974C6007D06C9 /* RegistrationViewController.swift in Sources */,
 				E119354D2C97F586004D84F9 /* SignInFormViewController.swift in Sources */,
+				E17A547D2C9E84A400C62762 /* ProductsViewController.swift in Sources */,
 				E121DB152C89796D007D06C9 /* SignUpFormViewController.swift in Sources */,
 				E121DAF62C897428007D06C9 /* EcommerceCartTests.swift in Sources */,
 				E17EB2532C996EBE0071A031 /* Products.swift in Sources */,
@@ -365,6 +372,7 @@
 				EA55D4CA2C970BA400028641 /* AuthTableViewCell.swift in Sources */,
 				E17EB2542C996EBE0071A031 /* Products.swift in Sources */,
 				E17A546A2C9D3A5200C62762 /* LoginHeaderCellTableViewCell.swift in Sources */,
+				E17A547E2C9E84A400C62762 /* ProductsViewController.swift in Sources */,
 				E121DB122C8974C6007D06C9 /* RegistrationViewController.swift in Sources */,
 				E17EB2482C9968500071A031 /* Endpoint.swift in Sources */,
 				E121DB002C897428007D06C9 /* EcommerceCartUITests.swift in Sources */,
