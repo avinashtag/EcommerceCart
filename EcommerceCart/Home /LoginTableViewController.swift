@@ -7,6 +7,7 @@
 
 import UIKit
 
+
 class LoginTableViewController: UITableViewController {
 
     override func viewDidLoad() {
@@ -23,23 +24,60 @@ class LoginTableViewController: UITableViewController {
 
     override func numberOfSections(in tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
-        return 0
+        return 3
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 0
+        switch section{
+        case 0: return 1
+        case 1, 2: return 2
+        default : return 0
+        }
     }
 
-    /*
+    
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
+        
+        switch indexPath.section{
+           
+        case 0:
+            
+            guard let cell = tableView.dequeueReusableCell(withIdentifier: "\(LoginHeaderCellTableViewCell.self)", for: indexPath) as? LoginHeaderCellTableViewCell else { fatalError() }
+            
+            
+            return cell
+            
+            
+        case 1:
+            
+            guard let cell = tableView.dequeueReusableCell(withIdentifier: "\(LoginFormCellTableViewCell.self)", for: indexPath) as? LoginFormCellTableViewCell else { fatalError() }
+            
+            cell.header.text = indexPath.row == 0 ? "Email" : "Password"
+            
+            return cell
 
-        // Configure the cell...
+        case 2:      
+            
+            switch indexPath.row{
+            case 0:
+                guard let cell = tableView.dequeueReusableCell(withIdentifier: "\(LoginFormSignInCell.self)", for: indexPath) as? LoginFormSignInCell else { fatalError() }
 
-        return cell
+                return cell
+                
+            case 1:
+                guard let cell = tableView.dequeueReusableCell(withIdentifier: "\(LoginFormSignUpCell.self)", for: indexPath) as? LoginFormSignUpCell else { fatalError() }
+
+                return cell
+
+                
+            default: fatalError()
+            }
+
+        default: fatalError()
+        }
     }
-    */
+    
 
     /*
     // Override to support conditional editing of the table view.
