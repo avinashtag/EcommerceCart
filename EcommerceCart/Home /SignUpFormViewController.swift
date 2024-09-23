@@ -22,6 +22,7 @@ class SignUpFormViewController: UIViewController {
     @IBOutlet weak var passwordTextField: UITextField!
     @IBOutlet weak var confirmPasswordTextField: UITextField!
     
+    private var products: [Products.Product]?
     
     let customFont = UIFont.systemFont(ofSize: 17, weight: .bold)
     
@@ -57,6 +58,7 @@ class SignUpFormViewController: UIViewController {
         Helper.addDoneButtonToKeyBoard(textField: passwordTextField, target: self, action: #selector(doneButtonPressed))
         Helper.addDoneButtonToKeyBoard(textField: confirmPasswordTextField, target: self, action: #selector(doneButtonPressed))
         
+        fetchProducts()
     }
     
     @objc func doneButtonPressed(){
@@ -73,4 +75,19 @@ class SignUpFormViewController: UIViewController {
     }
     
     
+}
+
+//API Calls
+extension SignUpFormViewController{
+    
+    func fetchProducts(){
+        Task{
+            do{
+                products = try await Products.Request().load()
+            }
+            catch{
+                print(error)
+            }
+        }
+    }
 }
