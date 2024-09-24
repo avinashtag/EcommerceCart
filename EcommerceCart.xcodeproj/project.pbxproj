@@ -48,6 +48,15 @@
 		EA55D4CC2C970BD100028641 /* LoginTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA55D4CB2C970BD100028641 /* LoginTableViewController.swift */; };
 		EA55D4CD2C970BD100028641 /* LoginTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA55D4CB2C970BD100028641 /* LoginTableViewController.swift */; };
 		EA55D4CE2C970BD100028641 /* LoginTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA55D4CB2C970BD100028641 /* LoginTableViewController.swift */; };
+		EA55D4D02C98B70900028641 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA55D4CF2C98B70900028641 /* HomeViewController.swift */; };
+		EA55D4D12C98B70900028641 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA55D4CF2C98B70900028641 /* HomeViewController.swift */; };
+		EA55D4D22C98B70900028641 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA55D4CF2C98B70900028641 /* HomeViewController.swift */; };
+		EA55D4D42CA063E300028641 /* SectionHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA55D4D32CA063E300028641 /* SectionHeaderView.swift */; };
+		EA55D4D52CA063E300028641 /* SectionHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA55D4D32CA063E300028641 /* SectionHeaderView.swift */; };
+		EA55D4D62CA063E300028641 /* SectionHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA55D4D32CA063E300028641 /* SectionHeaderView.swift */; };
+		EA55D4D82CA1295200028641 /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA55D4D72CA1295200028641 /* CollectionViewCell.swift */; };
+		EA55D4D92CA1295200028641 /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA55D4D72CA1295200028641 /* CollectionViewCell.swift */; };
+		EA55D4DA2CA1295200028641 /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA55D4D72CA1295200028641 /* CollectionViewCell.swift */; };
 		EAB185F82C9072F600700320 /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAB185F72C9072F600700320 /* Helper.swift */; };
 /* End PBXBuildFile section */
 
@@ -92,6 +101,9 @@
 		E17EB2512C996EBE0071A031 /* Products.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Products.swift; sourceTree = "<group>"; };
 		EA55D4C72C970BA400028641 /* AuthTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthTableViewCell.swift; sourceTree = "<group>"; };
 		EA55D4CB2C970BD100028641 /* LoginTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginTableViewController.swift; sourceTree = "<group>"; };
+		EA55D4CF2C98B70900028641 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		EA55D4D32CA063E300028641 /* SectionHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SectionHeaderView.swift; path = EcommerceCart/SectionHeaderView.swift; sourceTree = SOURCE_ROOT; };
+		EA55D4D72CA1295200028641 /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
 		EAB185F72C9072F600700320 /* Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -177,12 +189,14 @@
 			children = (
 				E121DB0F2C8974C6007D06C9 /* RegistrationViewController.swift */,
 				E121DB132C89796D007D06C9 /* SignUpFormViewController.swift */,
-				EA55D4C72C970BA400028641 /* AuthTableViewCell.swift */,
 				EA55D4CB2C970BD100028641 /* LoginTableViewController.swift */,
 				E17A54672C9D3A5200C62762 /* LoginHeaderCellTableViewCell.swift */,
 				E119354B2C97F586004D84F9 /* SignInFormViewController.swift */,
 				E17A547B2C9E84A400C62762 /* ProductsViewController.swift */,
 				E17EB2512C996EBE0071A031 /* Products.swift */,
+				EA55D4CF2C98B70900028641 /* HomeViewController.swift */,
+				EA55D4D32CA063E300028641 /* SectionHeaderView.swift */,
+				EA55D4D72CA1295200028641 /* CollectionViewCell.swift */,
 			);
 			path = "Home ";
 			sourceTree = "<group>";
@@ -329,6 +343,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EA55D4D82CA1295200028641 /* CollectionViewCell.swift in Sources */,
 				E121DB102C8974C6007D06C9 /* RegistrationViewController.swift in Sources */,
 				E17EB24E2C9968750071A031 /* Constants.swift in Sources */,
 				E17A547C2C9E84A400C62762 /* ProductsViewController.swift in Sources */,
@@ -338,6 +353,8 @@
 				EA55D4C82C970BA400028641 /* AuthTableViewCell.swift in Sources */,
 				E17EB24A2C99685F0071A031 /* Response.swift in Sources */,
 				EAB185F82C9072F600700320 /* Helper.swift in Sources */,
+				EA55D4D02C98B70900028641 /* HomeViewController.swift in Sources */,
+				EA55D4D42CA063E300028641 /* SectionHeaderView.swift in Sources */,
 				E119354C2C97F586004D84F9 /* SignInFormViewController.swift in Sources */,
 				E121DB142C89796D007D06C9 /* SignUpFormViewController.swift in Sources */,
 				E17EB2522C996EBE0071A031 /* Products.swift in Sources */,
@@ -355,13 +372,16 @@
 				EA55D4CD2C970BD100028641 /* LoginTableViewController.swift in Sources */,
 				E17A54692C9D3A5200C62762 /* LoginHeaderCellTableViewCell.swift in Sources */,
 				E121DB112C8974C6007D06C9 /* RegistrationViewController.swift in Sources */,
+				EA55D4D92CA1295200028641 /* CollectionViewCell.swift in Sources */,
 				E119354D2C97F586004D84F9 /* SignInFormViewController.swift in Sources */,
 				E17A547D2C9E84A400C62762 /* ProductsViewController.swift in Sources */,
 				E121DB152C89796D007D06C9 /* SignUpFormViewController.swift in Sources */,
+				EA55D4D52CA063E300028641 /* SectionHeaderView.swift in Sources */,
 				E121DAF62C897428007D06C9 /* EcommerceCartTests.swift in Sources */,
 				E17EB2532C996EBE0071A031 /* Products.swift in Sources */,
 				EA55D4C92C970BA400028641 /* AuthTableViewCell.swift in Sources */,
 				E17EB24F2C9968750071A031 /* Constants.swift in Sources */,
+				EA55D4D12C98B70900028641 /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -378,9 +398,12 @@
 				E121DB002C897428007D06C9 /* EcommerceCartUITests.swift in Sources */,
 				E17EB24C2C99685F0071A031 /* Response.swift in Sources */,
 				E17EB2502C9968750071A031 /* Constants.swift in Sources */,
+				EA55D4DA2CA1295200028641 /* CollectionViewCell.swift in Sources */,
 				E121DB162C89796D007D06C9 /* SignUpFormViewController.swift in Sources */,
+				EA55D4D62CA063E300028641 /* SectionHeaderView.swift in Sources */,
 				E119354E2C97F586004D84F9 /* SignInFormViewController.swift in Sources */,
 				E121DB022C897428007D06C9 /* EcommerceCartUITestsLaunchTests.swift in Sources */,
+				EA55D4D22C98B70900028641 /* HomeViewController.swift in Sources */,
 				EA55D4CE2C970BD100028641 /* LoginTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
