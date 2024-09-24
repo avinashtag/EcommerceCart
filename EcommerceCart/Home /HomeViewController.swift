@@ -25,6 +25,16 @@ class HomeViewController: UIViewController{
         homeCollectionView.delegate = self
         homeCollectionView.dataSource = self
         
+        Task{
+            do{
+                let products =  try await Products.Request().load()
+                print(products.count)
+            }
+            catch{
+                print(error.localizedDescription)
+            }
+        }
+        
     }
     
     

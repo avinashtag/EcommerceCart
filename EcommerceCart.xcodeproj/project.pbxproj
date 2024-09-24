@@ -42,7 +42,12 @@
 		E17EB2522C996EBE0071A031 /* Products.swift in Sources */ = {isa = PBXBuildFile; fileRef = E17EB2512C996EBE0071A031 /* Products.swift */; };
 		E17EB2532C996EBE0071A031 /* Products.swift in Sources */ = {isa = PBXBuildFile; fileRef = E17EB2512C996EBE0071A031 /* Products.swift */; };
 		E17EB2542C996EBE0071A031 /* Products.swift in Sources */ = {isa = PBXBuildFile; fileRef = E17EB2512C996EBE0071A031 /* Products.swift */; };
-		EA55D4C82C970BA400028641 /* AuthTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA55D4C72C970BA400028641 /* AuthTableViewCell.swift */; };
+		E1CD0FB82CA283C000B69C05 /* Bundle+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1CD0FB72CA283C000B69C05 /* Bundle+Extension.swift */; };
+		E1CD0FB92CA283C000B69C05 /* Bundle+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1CD0FB72CA283C000B69C05 /* Bundle+Extension.swift */; };
+		E1CD0FBA2CA283C000B69C05 /* Bundle+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1CD0FB72CA283C000B69C05 /* Bundle+Extension.swift */; };
+		E1CD0FBC2CA2846B00B69C05 /* Products.json in Resources */ = {isa = PBXBuildFile; fileRef = E1CD0FBB2CA2846B00B69C05 /* Products.json */; };
+		E1CD0FBD2CA2846B00B69C05 /* Products.json in Resources */ = {isa = PBXBuildFile; fileRef = E1CD0FBB2CA2846B00B69C05 /* Products.json */; };
+		E1CD0FBE2CA2846B00B69C05 /* Products.json in Resources */ = {isa = PBXBuildFile; fileRef = E1CD0FBB2CA2846B00B69C05 /* Products.json */; };
 		EA55D4C92C970BA400028641 /* AuthTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA55D4C72C970BA400028641 /* AuthTableViewCell.swift */; };
 		EA55D4CA2C970BA400028641 /* AuthTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA55D4C72C970BA400028641 /* AuthTableViewCell.swift */; };
 		EA55D4CC2C970BD100028641 /* LoginTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA55D4CB2C970BD100028641 /* LoginTableViewController.swift */; };
@@ -99,6 +104,8 @@
 		E17EB2492C99685F0071A031 /* Response.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Response.swift; sourceTree = "<group>"; };
 		E17EB24D2C9968750071A031 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		E17EB2512C996EBE0071A031 /* Products.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Products.swift; sourceTree = "<group>"; };
+		E1CD0FB72CA283C000B69C05 /* Bundle+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bundle+Extension.swift"; sourceTree = "<group>"; };
+		E1CD0FBB2CA2846B00B69C05 /* Products.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Products.json; sourceTree = "<group>"; };
 		EA55D4C72C970BA400028641 /* AuthTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthTableViewCell.swift; sourceTree = "<group>"; };
 		EA55D4CB2C970BD100028641 /* LoginTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginTableViewController.swift; sourceTree = "<group>"; };
 		EA55D4CF2C98B70900028641 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
@@ -139,6 +146,7 @@
 				E121DAF42C897428007D06C9 /* EcommerceCartTests */,
 				E121DAFE2C897428007D06C9 /* EcommerceCartUITests */,
 				E121DADC2C897425007D06C9 /* Products */,
+				E1CD0FB62CA27F1A00B69C05 /* Recovered References */,
 			);
 			sourceTree = "<group>";
 		};
@@ -155,6 +163,7 @@
 		E121DADD2C897425007D06C9 /* EcommerceCart */ = {
 			isa = PBXGroup;
 			children = (
+				E1CD0FBB2CA2846B00B69C05 /* Products.json */,
 				EAB185F62C90729000700320 /* Utility */,
 				E121DADE2C897425007D06C9 /* AppDelegate.swift */,
 				E121DAE02C897425007D06C9 /* SceneDelegate.swift */,
@@ -201,6 +210,14 @@
 			path = "Home ";
 			sourceTree = "<group>";
 		};
+		E1CD0FB62CA27F1A00B69C05 /* Recovered References */ = {
+			isa = PBXGroup;
+			children = (
+				EA55D4C72C970BA400028641 /* AuthTableViewCell.swift */,
+			);
+			name = "Recovered References";
+			sourceTree = "<group>";
+		};
 		EAB185F62C90729000700320 /* Utility */ = {
 			isa = PBXGroup;
 			children = (
@@ -208,6 +225,7 @@
 				EAB185F72C9072F600700320 /* Helper.swift */,
 				E17EB2492C99685F0071A031 /* Response.swift */,
 				E17EB24D2C9968750071A031 /* Constants.swift */,
+				E1CD0FB72CA283C000B69C05 /* Bundle+Extension.swift */,
 			);
 			path = Utility;
 			sourceTree = "<group>";
@@ -317,6 +335,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E121DAE82C897428007D06C9 /* Assets.xcassets in Resources */,
+				E1CD0FBC2CA2846B00B69C05 /* Products.json in Resources */,
 				E121DAEB2C897428007D06C9 /* Base in Resources */,
 				E121DAE62C897425007D06C9 /* Base in Resources */,
 			);
@@ -326,6 +345,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E1CD0FBD2CA2846B00B69C05 /* Products.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -333,6 +353,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E1CD0FBE2CA2846B00B69C05 /* Products.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -344,13 +365,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				EA55D4D82CA1295200028641 /* CollectionViewCell.swift in Sources */,
+				E1CD0FB82CA283C000B69C05 /* Bundle+Extension.swift in Sources */,
 				E121DB102C8974C6007D06C9 /* RegistrationViewController.swift in Sources */,
 				E17EB24E2C9968750071A031 /* Constants.swift in Sources */,
 				E17A547C2C9E84A400C62762 /* ProductsViewController.swift in Sources */,
 				E17A54682C9D3A5200C62762 /* LoginHeaderCellTableViewCell.swift in Sources */,
 				E17EB2462C9968500071A031 /* Endpoint.swift in Sources */,
 				E121DADF2C897425007D06C9 /* AppDelegate.swift in Sources */,
-				EA55D4C82C970BA400028641 /* AuthTableViewCell.swift in Sources */,
 				E17EB24A2C99685F0071A031 /* Response.swift in Sources */,
 				EAB185F82C9072F600700320 /* Helper.swift in Sources */,
 				EA55D4D02C98B70900028641 /* HomeViewController.swift in Sources */,
@@ -370,6 +391,7 @@
 				E17EB24B2C99685F0071A031 /* Response.swift in Sources */,
 				E17EB2472C9968500071A031 /* Endpoint.swift in Sources */,
 				EA55D4CD2C970BD100028641 /* LoginTableViewController.swift in Sources */,
+				E1CD0FB92CA283C000B69C05 /* Bundle+Extension.swift in Sources */,
 				E17A54692C9D3A5200C62762 /* LoginHeaderCellTableViewCell.swift in Sources */,
 				E121DB112C8974C6007D06C9 /* RegistrationViewController.swift in Sources */,
 				EA55D4D92CA1295200028641 /* CollectionViewCell.swift in Sources */,
@@ -390,6 +412,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EA55D4CA2C970BA400028641 /* AuthTableViewCell.swift in Sources */,
+				E1CD0FBA2CA283C000B69C05 /* Bundle+Extension.swift in Sources */,
 				E17EB2542C996EBE0071A031 /* Products.swift in Sources */,
 				E17A546A2C9D3A5200C62762 /* LoginHeaderCellTableViewCell.swift in Sources */,
 				E17A547E2C9E84A400C62762 /* ProductsViewController.swift in Sources */,

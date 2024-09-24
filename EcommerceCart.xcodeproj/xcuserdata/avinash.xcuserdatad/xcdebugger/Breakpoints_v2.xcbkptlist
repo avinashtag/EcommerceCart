@@ -66,21 +66,7 @@
             landmarkType = "7">
             <Locations>
                <Location
-                  uuid = "6812B532-AFEC-4012-80EB-D18544E1BE94 - 501e94856061f50a"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "(3) suspend resume partial function for closure #1 @Sendable () async -&gt; () in EcommerceCart.ProductsViewController.fetchProducts() -&gt; ()"
-                  moduleName = "EcommerceCart"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/avinash/Documents/EcommerceCart/EcommerceCart/Home%20/ProductsViewController.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "84"
-                  endingLineNumber = "84">
-               </Location>
-               <Location
-                  uuid = "6812B532-AFEC-4012-80EB-D18544E1BE94 - 97d9c9fe98003508"
+                  uuid = "6812B532-AFEC-4012-80EB-D18544E1BE94 - 97d9c9fe98003529"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
@@ -90,11 +76,11 @@
                   urlString = "file:///Users/avinash/Documents/EcommerceCart/EcommerceCart/Home%20/ProductsViewController.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "84"
-                  endingLineNumber = "84">
+                  startingLineNumber = "85"
+                  endingLineNumber = "85">
                </Location>
                <Location
-                  uuid = "6812B532-AFEC-4012-80EB-D18544E1BE94 - 947f66648d41db07"
+                  uuid = "6812B532-AFEC-4012-80EB-D18544E1BE94 - 947f66648d41db26"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
@@ -104,11 +90,25 @@
                   urlString = "file:///Users/avinash/Documents/EcommerceCart/EcommerceCart/Home%20/ProductsViewController.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "84"
-                  endingLineNumber = "84">
+                  startingLineNumber = "85"
+                  endingLineNumber = "85">
                </Location>
                <Location
-                  uuid = "6812B532-AFEC-4012-80EB-D18544E1BE94 - af7ff5391492150d"
+                  uuid = "6812B532-AFEC-4012-80EB-D18544E1BE94 - 501e94856061f52b"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(3) suspend resume partial function for closure #1 @Sendable () async -&gt; () in EcommerceCart.ProductsViewController.fetchProducts() -&gt; ()"
+                  moduleName = "EcommerceCart"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/avinash/Documents/EcommerceCart/EcommerceCart/Home%20/ProductsViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "85"
+                  endingLineNumber = "85">
+               </Location>
+               <Location
+                  uuid = "6812B532-AFEC-4012-80EB-D18544E1BE94 - af7ff5391492152c"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
@@ -118,8 +118,8 @@
                   urlString = "file:///Users/avinash/Documents/EcommerceCart/EcommerceCart/Home%20/ProductsViewController.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "84"
-                  endingLineNumber = "84">
+                  startingLineNumber = "85"
+                  endingLineNumber = "85">
                </Location>
             </Locations>
          </BreakpointContent>
@@ -168,6 +168,54 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "37"
             endingLineNumber = "37"
+            landmarkName = "viewDidLoad()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "0289A611-2072-4307-9DB6-5DBCE772B83C"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "EcommerceCart/Home /HomeViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "31"
+            endingLineNumber = "31"
+            landmarkName = "viewDidLoad()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "DD70726B-B613-4958-A13F-2351F1DEE194"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "EcommerceCart/Home /HomeViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "20"
+            endingLineNumber = "20"
+            landmarkName = "viewDidLoad()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "50F0BA71-04B1-4CAC-B8C2-84578E7F0ED8"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "EcommerceCart/Home /HomeViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "34"
+            endingLineNumber = "34"
             landmarkName = "viewDidLoad()"
             landmarkType = "7">
          </BreakpointContent>
