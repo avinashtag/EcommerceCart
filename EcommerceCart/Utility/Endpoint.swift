@@ -42,13 +42,13 @@ class Network: NSObject, URLSessionTaskDelegate {
         
         let url = components.url!
         var request = URLRequest(url: url)
-        var headers = request.allHTTPHeaderFields ?? [:]
+        let headers = request.allHTTPHeaderFields ?? [:]
         request.allHTTPHeaderFields = headers
         request.cachePolicy = request.httpMethod == HTTPMethod.GET.rawValue ? .reloadRevalidatingCacheData : .reloadIgnoringCacheData
         request.setValue(APIContent.json, forHTTPHeaderField:APIContent.type)
         request.httpMethod = method?.rawValue ?? HTTPMethod.GET.rawValue
         if let body = body{ request.httpBody = try JSONEncoder().encode(body) }
-        let (responseData, urlResponse) = try await urlSession.data(for: request, delegate: self)
+        let (responseData, _) = try await urlSession.data(for: request, delegate: self)
         
         let response = try JSONDecoder().decode(T.self, from: responseData)
         
