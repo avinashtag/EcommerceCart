@@ -39,7 +39,6 @@ xcdebugger/
 *.lock
 *.xcuserstate
 *.DS_Store
-*.plist
 *.moved-aside
 *.xcuserdatad/
 
