@@ -38,6 +38,17 @@ class HomeViewController: UIViewController{
         
     }
     
+    // Prepare for the segue
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "\(ProductDetailViewController.self)Segue" {
+            // Get the destination view controller
+            if let destinationVC = segue.destination as? ProductDetailViewController{
+                // Pass the selected object to the destination view controller
+                destinationVC.product = selectedProduct
+            }
+        }
+    }
+
     
     
     func addNavigationbarButtons(){
@@ -161,8 +172,8 @@ extension HomeViewController: UICollectionViewDelegate, UICollectionViewDataSour
     }
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         switch section{
-        case 0: return 1
-        default: return 10
+        case 0: return products?.count ?? 0 > 0 ? 1 : 0
+        default: return products?.count ?? 0
         } //later this will be based on the api call.
     }
     
@@ -188,23 +199,13 @@ extension HomeViewController: UICollectionViewDelegate, UICollectionViewDataSour
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-            // Get the selected object
+        // Get the selected object
         selectedProduct = products?[indexPath.row]
-            
-            // Perform the segue to the next view controller
-            performSegue(withIdentifier: "showDetailSegue", sender: self)
-        }
         
-        // Prepare for the segue
-        override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-            if segue.identifier == "showDetailSegue" {
-                // Get the destination view controller
-                if let destinationVC = segue.destination as? ProductDetailViewController{
-                    // Pass the selected object to the destination view controller
-                    destinationVC.product = selectedProduct
-                }
-            }
-        }
+        // Perform the segue to the next view controller
+        performSegue(withIdentifier: "\(ProductDetailViewController.self)Segue", sender: self)
+    }
+    
     
     
 }
@@ -232,5 +233,10 @@ extension HomeViewController{
 }
 
 
-
+/*
+ 
+ navigation bar appearance
+ 1. Color
+ 2. add button in searchbar instead of textfield : subclass add in views
+ */
 
