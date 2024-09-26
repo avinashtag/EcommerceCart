@@ -12,7 +12,6 @@ class CollectionViewCell: UICollectionViewCell {
     let imageView = UIImageView()
     let titleLabel = UILabel()
     let priceLabel = UILabel()
-    let favoriteButton = UIButton()
     
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -40,10 +39,7 @@ class CollectionViewCell: UICollectionViewCell {
         priceLabel.translatesAutoresizingMaskIntoConstraints = false
         contentView.addSubview(priceLabel)
         
-        // Favorite Button setup
-        favoriteButton.setImage(UIImage(systemName: "heart"), for: .normal)
-        favoriteButton.translatesAutoresizingMaskIntoConstraints = false
-        contentView.addSubview(favoriteButton)
+       
         
         // Set constraints
         NSLayoutConstraint.activate([
@@ -59,8 +55,6 @@ class CollectionViewCell: UICollectionViewCell {
             priceLabel.leadingAnchor.constraint(equalTo: contentView.leadingAnchor),
             priceLabel.trailingAnchor.constraint(equalTo: contentView.trailingAnchor),
             
-            favoriteButton.topAnchor.constraint(equalTo: contentView.topAnchor, constant: 8),
-            favoriteButton.trailingAnchor.constraint(equalTo: contentView.trailingAnchor, constant: -8),
         ])
     }
     

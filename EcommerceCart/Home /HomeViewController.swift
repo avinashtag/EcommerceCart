@@ -10,6 +10,11 @@ import UIKit
 class HomeViewController: UIViewController{
     @IBOutlet weak var searchBar: UITextField!
     @IBOutlet weak var homeCollectionView: UICollectionView!
+    private var products: [Products.Product]?
+    
+    var selectedProduct: Products.Product?
+    
+    var myqueue: DispatchQueue = DispatchQueue(label: "Bhavya", qos: .background)
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -25,15 +30,11 @@ class HomeViewController: UIViewController{
         homeCollectionView.delegate = self
         homeCollectionView.dataSource = self
         
-        Task{
-            do{
-                let products =  try await Products.Request().load()
-                print(products.count)
-            }
-            catch{
-                print(error.localizedDescription)
-            }
+        myqueue.async {
+            self.fetchProducts()// 2 min
         }
+        
+        
         
     }
     
@@ -113,14 +114,6 @@ class HomeViewController: UIViewController{
         // TODO open Side bar menu
     }
     
-    // MARK: - Navigation
-    
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    
     
 }
 extension HomeViewController {
@@ -174,11 +167,13 @@ extension HomeViewController: UICollectionViewDelegate, UICollectionViewDataSour
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath) as! CollectionViewCell
+        guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath) as? CollectionViewCell, let product = products?[indexPath.row] else {
+            fatalError()
+        }
         
         // Configure the cell with title, price, and imageURL (dummy URLs here)
-        let imageURL = URL(string: "https://upload.wikimedia.org/wikipedia/commons/d/dc/Steve_Jobs_Headshot_2010-CROP_%28cropped_2%29.jpg") // Replace with real URL from your API
-        cell.configureCell(with: imageURL, title: "Item \(indexPath.row + 1)", price: "$\(indexPath.row * 10)")
+        let imageURL = URL(string: product.image) // Replace with real URL from your API
+        cell.configureCell(with: imageURL, title: product.title, price: "$\(product.price)")
         
         return cell
     }
@@ -192,8 +187,50 @@ extension HomeViewController: UICollectionViewDelegate, UICollectionViewDataSour
         return UICollectionReusableView()
     }
     
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+            // Get the selected object
+        selectedProduct = products?[indexPath.row]
+            
+            // Perform the segue to the next view controller
+            performSegue(withIdentifier: "showDetailSegue", sender: self)
+        }
+        
+        // Prepare for the segue
+        override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+            if segue.identifier == "showDetailSegue" {
+                // Get the destination view controller
+                if let destinationVC = segue.destination as? ProductDetailViewController{
+                    // Pass the selected object to the destination view controller
+                    destinationVC.product = selectedProduct
+                }
+            }
+        }
+    
     
 }
+
+extension HomeViewController{
+    
+    func fetchProducts(){
+        Task{
+            do{
+                products = try await Products.Request().load()
+                //Always call UI on main thread
+                //Switch to main thread
+                //****GCD- Grand Central Dispatch - Read on developer.apple ?****
+                
+                DispatchQueue.main.async {
+                    self.homeCollectionView.reloadData()
+                }
+                
+            }
+            catch{
+                print(error)
+            }
+        }
+    }
+}
+
 
 
 

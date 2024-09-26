@@ -1,0 +1,61 @@
+# User-specific files
+*.xcuserstate
+*.xcuserdata/
+*.xcodeproj/*.xcworkspace/xcuserdata/
+
+# Build output files
+build/
+DerivedData/
+
+# Various settings
+*.pbxuser
+*.mode1v3
+*.mode2v3
+*.perspectivev3
+*.swp
+*.xcscmblueprint
+
+# CocoaPods dependencies
+Pods/
+Podfile.lock
+
+# Carthage dependencies
+Carthage/Build/
+Carthage/Checkouts/
+Carthage/Build/iOS/
+
+# Swift Package Manager
+/.build/
+/Packages/
+/.swiftpm/
+/.idea
+
+# Xcode workspace
+xcuserdata/
+xcdebugger/
+
+# Temporary and log files
+*.swp
+*.lock
+*.xcuserstate
+*.DS_Store
+*.plist
+*.moved-aside
+*.xcuserdatad/
+
+# Fastlane
+fastlane/report.xml
+fastlane/Preview.html
+fastlane/screenshots
+fastlane/test_output
+fastlane/report.xcresult
+
+# Archives
+*.ipa
+*.dSYM.zip
+*.dSYM
+
+# macOS files
+.DS_Store
+*.plist
+
