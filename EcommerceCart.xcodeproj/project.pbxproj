@@ -66,6 +66,9 @@
 		EA55D4D92CA1295200028641 /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA55D4D72CA1295200028641 /* CollectionViewCell.swift */; };
 		EA55D4DA2CA1295200028641 /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA55D4D72CA1295200028641 /* CollectionViewCell.swift */; };
 		EAB185F82C9072F600700320 /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAB185F72C9072F600700320 /* Helper.swift */; };
+		EAD1B7832CA66D5900F9C38B /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAD1B7822CA66D5900F9C38B /* SearchViewController.swift */; };
+		EAD1B7842CA66D5900F9C38B /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAD1B7822CA66D5900F9C38B /* SearchViewController.swift */; };
+		EAD1B7852CA66D5900F9C38B /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAD1B7822CA66D5900F9C38B /* SearchViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -116,6 +119,7 @@
 		EA55D4D32CA063E300028641 /* SectionHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SectionHeaderView.swift; path = EcommerceCart/SectionHeaderView.swift; sourceTree = SOURCE_ROOT; };
 		EA55D4D72CA1295200028641 /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
 		EAB185F72C9072F600700320 /* Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
+		EAD1B7822CA66D5900F9C38B /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -211,6 +215,7 @@
 				EA55D4CF2C98B70900028641 /* HomeViewController.swift */,
 				EA55D4D32CA063E300028641 /* SectionHeaderView.swift */,
 				EA55D4D72CA1295200028641 /* CollectionViewCell.swift */,
+				EAD1B7822CA66D5900F9C38B /* SearchViewController.swift */,
 			);
 			path = "Home ";
 			sourceTree = "<group>";
@@ -373,6 +378,7 @@
 				E1CD0FB82CA283C000B69C05 /* Bundle+Extension.swift in Sources */,
 				E121DB102C8974C6007D06C9 /* RegistrationViewController.swift in Sources */,
 				E17EB24E2C9968750071A031 /* Constants.swift in Sources */,
+				EAD1B7832CA66D5900F9C38B /* SearchViewController.swift in Sources */,
 				E17A547C2C9E84A400C62762 /* ProductsViewController.swift in Sources */,
 				E17A54682C9D3A5200C62762 /* LoginHeaderCellTableViewCell.swift in Sources */,
 				E17EB2462C9968500071A031 /* Endpoint.swift in Sources */,
@@ -406,6 +412,7 @@
 				E121DB152C89796D007D06C9 /* SignUpFormViewController.swift in Sources */,
 				E103B83D2CA532A3007BCB25 /* ProductDetailViewController.swift in Sources */,
 				EA55D4D52CA063E300028641 /* SectionHeaderView.swift in Sources */,
+				EAD1B7842CA66D5900F9C38B /* SearchViewController.swift in Sources */,
 				E121DAF62C897428007D06C9 /* EcommerceCartTests.swift in Sources */,
 				E17EB2532C996EBE0071A031 /* Products.swift in Sources */,
 				EA55D4C92C970BA400028641 /* AuthTableViewCell.swift in Sources */,
@@ -422,6 +429,7 @@
 				E1CD0FBA2CA283C000B69C05 /* Bundle+Extension.swift in Sources */,
 				E17EB2542C996EBE0071A031 /* Products.swift in Sources */,
 				E17A546A2C9D3A5200C62762 /* LoginHeaderCellTableViewCell.swift in Sources */,
+				EAD1B7852CA66D5900F9C38B /* SearchViewController.swift in Sources */,
 				E17A547E2C9E84A400C62762 /* ProductsViewController.swift in Sources */,
 				E121DB122C8974C6007D06C9 /* RegistrationViewController.swift in Sources */,
 				E17EB2482C9968500071A031 /* Endpoint.swift in Sources */,

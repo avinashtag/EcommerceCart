@@ -10,12 +10,49 @@ import UIKit
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
+    var window: UIWindow?
 
-
-    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
-        return true
-    }
+        func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
+            
+            // Customize the global navigation bar appearance
+            let appearance = UINavigationBarAppearance()
+            
+            // Set the background color for the navigation bar
+            appearance.backgroundColor = UIColor.accent
+            
+            // Set the text attributes for title and large title (white text)
+            appearance.titleTextAttributes = [
+                .foregroundColor: UIColor.white,
+                .font: UIFont.systemFont(ofSize: 18, weight: .semibold)
+            ]
+            appearance.largeTitleTextAttributes = [
+                .foregroundColor: UIColor.white,
+                .font: UIFont.boldSystemFont(ofSize: 30)
+            ]
+            
+            // Apply the appearance globally to all UINavigationBars
+            UINavigationBar.appearance().standardAppearance = appearance
+            UINavigationBar.appearance().scrollEdgeAppearance = appearance
+            
+            // Set bar button tint color to white (for buttons and back button)
+            UINavigationBar.appearance().tintColor = UIColor.white
+            
+            // Set status bar style to light content
+           
+            if #available(iOS 13.0, *) {
+                if let statusBarManager = window?.windowScene?.statusBarManager {
+                    // Get the status bar frame directly, no need for optional binding
+                    let statusBarFrame = statusBarManager.statusBarFrame
+                    let statusBarView = UIView(frame: statusBarFrame)
+                    statusBarView.backgroundColor = UIColor.accent
+                    window?.addSubview(statusBarView)
+                }
+            }else {
+                UIApplication.shared.statusBarStyle = .lightContent
+            }
+            
+            return true
+        }
 
     // MARK: UISceneSession Lifecycle
 

@@ -22,13 +22,15 @@ class ProductDetailViewController: UIViewController {
         super.viewDidLoad()
         
         if let receivedProduct = product {
-            
-            //            productImage.loadImage(from: URL(string: product?.image ?? ""))
+          
+            if let imageUrl = URL(string: receivedProduct.image) {
+                productImage.loadImage(from: imageUrl)
+            }
             productTitle.text = receivedProduct.title
             productDescription.text = receivedProduct.description
             price.text = "$\(receivedProduct.price)"
             category.text = receivedProduct.category.rawValue
-            rating.text = "\(String(receivedProduct.rating.rate))"
+            rating.text = "\(String(receivedProduct.rating.rate))/\(String(receivedProduct.rating.count))"
             
         }else{
             fatalError()
