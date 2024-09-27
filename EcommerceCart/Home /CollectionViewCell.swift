@@ -72,6 +72,8 @@ extension UIImageView {
     func loadImage(from url: URL) {
         // Start a background task to download the image
         DispatchQueue.global().async { [weak self] in
+            
+            //save it in cache
             // Download image data from URL
             if let data = try? Data(contentsOf: url) {
                 // If data is successfully fetched, create an image

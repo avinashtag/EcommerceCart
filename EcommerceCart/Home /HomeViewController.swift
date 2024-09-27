@@ -11,11 +11,13 @@ class HomeViewController: UIViewController{
     @IBOutlet weak var searchBar: UITextField!
     @IBOutlet weak var homeCollectionView: UICollectionView!
     private var products: [Products.Product]?
-    
+    private var productCatogries: [Products.Product]?
+
     var selectedProduct: Products.Product?
     
     var myqueue: DispatchQueue = DispatchQueue(label: "Bhavya", qos: .background)
     
+    private let apiGrouped : DispatchGroup = DispatchGroup()
     override func viewDidLoad() {
         super.viewDidLoad()
         addNavigationbarButtons()
@@ -30,10 +32,26 @@ class HomeViewController: UIViewController{
         homeCollectionView.delegate = self
         homeCollectionView.dataSource = self
         
-        myqueue.async {
+        apiGrouped.enter()
             self.fetchProducts()// 2 min
+            //Product1
+        
+        apiGrouped.enter()
+            self.fetchProductsWithCategory()// 2 min
+//            product 2
+        
+        apiGrouped.notify(queue: myqueue) { [weak self ] in
+            guard let self = self else { return }
+            guard let productsCategories = self.productCatogries else { return }
+            self.products?.append(contentsOf: productsCategories)
+
+            DispatchQueue.main.async {
+                self.homeCollectionView.reloadData()
+            }
         }
         
+        //Collection show combine Products
+
         
         
     }
@@ -219,17 +237,39 @@ extension HomeViewController{
                 //Always call UI on main thread
                 //Switch to main thread
                 //****GCD- Grand Central Dispatch - Read on developer.apple ?****
-                
-                DispatchQueue.main.async {
-                    self.homeCollectionView.reloadData()
-                }
-                
+                apiGrouped.leave()
             }
             catch{
                 print(error)
             }
         }
     }
+    
+    func fetchProductsWithCategory(){
+        Task{
+            do{
+                productCatogries = try await Products.Request().load()
+                //Always call UI on main thread
+                //Switch to main thread
+                //****GCD- Grand Central Dispatch - Read on developer.apple ?****
+                apiGrouped.leave()
+                
+            }
+            catch{
+                print(error)
+            }
+        }
+        //Cancellation
+        //Set priority
+        
+        
+        //GCD faster - written in C more close to machine language
+        
+        
+        //Which one is better
+        
+    }
+
 }
 
 

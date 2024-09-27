@@ -21,6 +21,17 @@ public enum Products{
             let response: [Product] = try await Network.shared.fetch(for: .products)
             return response
         }
+        
+        public func loadWithCategory() async throws -> [Product]{
+            
+            #if DEBUG
+            return try Bundle.main.decoder("Products.json", of: [Product].self)
+            #endif
+            
+            let response: [Product] = try await Network.shared.fetch(for: .products)
+            return response
+        }
+
     }
     
     
