@@ -22,7 +22,7 @@ class SearchViewController: UIViewController {
             
             // Customize the clear button icon
             if let clearIcon = UIImage(systemName: "xmark.circle.fill") {
-                searchBar.setImage(clearIcon, for: .clear, state: .normal)
+
             }
             
             
@@ -33,6 +33,7 @@ class SearchViewController: UIViewController {
             let filterButton = UIButton(type: .custom)
             filterButton.setImage(UIImage(systemName: "line.horizontal.3.decrease.circle"), for: .normal)
             filterButton.tintColor = .systemBlue // Set the button color
+            filterButton.backgroundColor = .systemBlue
             filterButton.frame = CGRect(x: 0, y: 0, width: 30, height: 30) // Adjust size as needed
             filterButton.addTarget(self, action: #selector(filterButtonTapped), for: .touchUpInside)
             
@@ -42,6 +43,7 @@ class SearchViewController: UIViewController {
         }else {
             fatalError()
         }
+        searchBar.tintColor = .red
     }
     // Action for when the filter button is tapped
     @objc func filterButtonTapped() {
