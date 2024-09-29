@@ -69,6 +69,9 @@
 		EAD1B7832CA66D5900F9C38B /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAD1B7822CA66D5900F9C38B /* SearchViewController.swift */; };
 		EAD1B7842CA66D5900F9C38B /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAD1B7822CA66D5900F9C38B /* SearchViewController.swift */; };
 		EAD1B7852CA66D5900F9C38B /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAD1B7822CA66D5900F9C38B /* SearchViewController.swift */; };
+		EAD1B7872CA9638800F9C38B /* UIImageView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAD1B7862CA9638800F9C38B /* UIImageView+Extension.swift */; };
+		EAD1B7882CA9638800F9C38B /* UIImageView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAD1B7862CA9638800F9C38B /* UIImageView+Extension.swift */; };
+		EAD1B7892CA9638800F9C38B /* UIImageView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAD1B7862CA9638800F9C38B /* UIImageView+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -120,6 +123,7 @@
 		EA55D4D72CA1295200028641 /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
 		EAB185F72C9072F600700320 /* Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
 		EAD1B7822CA66D5900F9C38B /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		EAD1B7862CA9638800F9C38B /* UIImageView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -236,6 +240,7 @@
 				E17EB2492C99685F0071A031 /* Response.swift */,
 				E17EB24D2C9968750071A031 /* Constants.swift */,
 				E1CD0FB72CA283C000B69C05 /* Bundle+Extension.swift */,
+				EAD1B7862CA9638800F9C38B /* UIImageView+Extension.swift */,
 			);
 			path = Utility;
 			sourceTree = "<group>";
@@ -376,6 +381,7 @@
 			files = (
 				EA55D4D82CA1295200028641 /* CollectionViewCell.swift in Sources */,
 				E1CD0FB82CA283C000B69C05 /* Bundle+Extension.swift in Sources */,
+				EAD1B7872CA9638800F9C38B /* UIImageView+Extension.swift in Sources */,
 				E121DB102C8974C6007D06C9 /* RegistrationViewController.swift in Sources */,
 				E17EB24E2C9968750071A031 /* Constants.swift in Sources */,
 				EAD1B7832CA66D5900F9C38B /* SearchViewController.swift in Sources */,
@@ -416,6 +422,7 @@
 				E121DAF62C897428007D06C9 /* EcommerceCartTests.swift in Sources */,
 				E17EB2532C996EBE0071A031 /* Products.swift in Sources */,
 				EA55D4C92C970BA400028641 /* AuthTableViewCell.swift in Sources */,
+				EAD1B7882CA9638800F9C38B /* UIImageView+Extension.swift in Sources */,
 				E17EB24F2C9968750071A031 /* Constants.swift in Sources */,
 				EA55D4D12C98B70900028641 /* HomeViewController.swift in Sources */,
 			);
@@ -427,6 +434,7 @@
 			files = (
 				EA55D4CA2C970BA400028641 /* AuthTableViewCell.swift in Sources */,
 				E1CD0FBA2CA283C000B69C05 /* Bundle+Extension.swift in Sources */,
+				EAD1B7892CA9638800F9C38B /* UIImageView+Extension.swift in Sources */,
 				E17EB2542C996EBE0071A031 /* Products.swift in Sources */,
 				E17A546A2C9D3A5200C62762 /* LoginHeaderCellTableViewCell.swift in Sources */,
 				EAD1B7852CA66D5900F9C38B /* SearchViewController.swift in Sources */,
