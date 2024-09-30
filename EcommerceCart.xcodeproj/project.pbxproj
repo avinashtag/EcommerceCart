@@ -42,6 +42,12 @@
 		E17EB2522C996EBE0071A031 /* Products.swift in Sources */ = {isa = PBXBuildFile; fileRef = E17EB2512C996EBE0071A031 /* Products.swift */; };
 		E17EB2532C996EBE0071A031 /* Products.swift in Sources */ = {isa = PBXBuildFile; fileRef = E17EB2512C996EBE0071A031 /* Products.swift */; };
 		E17EB2542C996EBE0071A031 /* Products.swift in Sources */ = {isa = PBXBuildFile; fileRef = E17EB2512C996EBE0071A031 /* Products.swift */; };
+		E1875AEB2CAA85970031C173 /* Products.json in Resources */ = {isa = PBXBuildFile; fileRef = E1875AEA2CAA85970031C173 /* Products.json */; };
+		E1875AEC2CAA85970031C173 /* Products.json in Resources */ = {isa = PBXBuildFile; fileRef = E1875AEA2CAA85970031C173 /* Products.json */; };
+		E1875AED2CAA85970031C173 /* Products.json in Resources */ = {isa = PBXBuildFile; fileRef = E1875AEA2CAA85970031C173 /* Products.json */; };
+		E1875AEF2CAA88560031C173 /* Bundle+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1875AEE2CAA88560031C173 /* Bundle+Extension.swift */; };
+		E1875AF02CAA88560031C173 /* Bundle+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1875AEE2CAA88560031C173 /* Bundle+Extension.swift */; };
+		E1875AF12CAA88560031C173 /* Bundle+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1875AEE2CAA88560031C173 /* Bundle+Extension.swift */; };
 		EA55D4C82C970BA400028641 /* AuthTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA55D4C72C970BA400028641 /* AuthTableViewCell.swift */; };
 		EA55D4C92C970BA400028641 /* AuthTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA55D4C72C970BA400028641 /* AuthTableViewCell.swift */; };
 		EA55D4CA2C970BA400028641 /* AuthTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA55D4C72C970BA400028641 /* AuthTableViewCell.swift */; };
@@ -90,6 +96,8 @@
 		E17EB2492C99685F0071A031 /* Response.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Response.swift; sourceTree = "<group>"; };
 		E17EB24D2C9968750071A031 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		E17EB2512C996EBE0071A031 /* Products.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Products.swift; sourceTree = "<group>"; };
+		E1875AEA2CAA85970031C173 /* Products.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Products.json; sourceTree = "<group>"; };
+		E1875AEE2CAA88560031C173 /* Bundle+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bundle+Extension.swift"; sourceTree = "<group>"; };
 		EA55D4C72C970BA400028641 /* AuthTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthTableViewCell.swift; sourceTree = "<group>"; };
 		EA55D4CB2C970BD100028641 /* LoginTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginTableViewController.swift; sourceTree = "<group>"; };
 		EAB185F72C9072F600700320 /* Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
@@ -190,10 +198,12 @@
 		EAB185F62C90729000700320 /* Utility */ = {
 			isa = PBXGroup;
 			children = (
+				E1875AEA2CAA85970031C173 /* Products.json */,
 				E17EB2452C9968500071A031 /* Endpoint.swift */,
 				EAB185F72C9072F600700320 /* Helper.swift */,
 				E17EB2492C99685F0071A031 /* Response.swift */,
 				E17EB24D2C9968750071A031 /* Constants.swift */,
+				E1875AEE2CAA88560031C173 /* Bundle+Extension.swift */,
 			);
 			path = Utility;
 			sourceTree = "<group>";
@@ -303,6 +313,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E121DAE82C897428007D06C9 /* Assets.xcassets in Resources */,
+				E1875AEB2CAA85970031C173 /* Products.json in Resources */,
 				E121DAEB2C897428007D06C9 /* Base in Resources */,
 				E121DAE62C897425007D06C9 /* Base in Resources */,
 			);
@@ -312,6 +323,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E1875AEC2CAA85970031C173 /* Products.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -319,6 +331,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E1875AED2CAA85970031C173 /* Products.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -330,6 +343,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E121DB102C8974C6007D06C9 /* RegistrationViewController.swift in Sources */,
+				E1875AEF2CAA88560031C173 /* Bundle+Extension.swift in Sources */,
 				E17EB24E2C9968750071A031 /* Constants.swift in Sources */,
 				E17A547C2C9E84A400C62762 /* ProductsViewController.swift in Sources */,
 				E17A54682C9D3A5200C62762 /* LoginHeaderCellTableViewCell.swift in Sources */,
@@ -353,6 +367,7 @@
 				E17EB24B2C99685F0071A031 /* Response.swift in Sources */,
 				E17EB2472C9968500071A031 /* Endpoint.swift in Sources */,
 				EA55D4CD2C970BD100028641 /* LoginTableViewController.swift in Sources */,
+				E1875AF02CAA88560031C173 /* Bundle+Extension.swift in Sources */,
 				E17A54692C9D3A5200C62762 /* LoginHeaderCellTableViewCell.swift in Sources */,
 				E121DB112C8974C6007D06C9 /* RegistrationViewController.swift in Sources */,
 				E119354D2C97F586004D84F9 /* SignInFormViewController.swift in Sources */,
@@ -370,6 +385,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EA55D4CA2C970BA400028641 /* AuthTableViewCell.swift in Sources */,
+				E1875AF12CAA88560031C173 /* Bundle+Extension.swift in Sources */,
 				E17EB2542C996EBE0071A031 /* Products.swift in Sources */,
 				E17A546A2C9D3A5200C62762 /* LoginHeaderCellTableViewCell.swift in Sources */,
 				E17A547E2C9E84A400C62762 /* ProductsViewController.swift in Sources */,

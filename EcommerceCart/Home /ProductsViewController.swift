@@ -18,6 +18,17 @@ class ProductCell: UITableViewCell{
         super.awakeFromNib()
         
     }
+    
+    
+    func download(image: String ){
+        DispatchQueue.global().async {
+            guard let url = URL(string: image), let data = try? Data(contentsOf: url) else { return }
+            DispatchQueue.main.async {
+                self.productImage.image = UIImage(data: data)
+            }
+        }
+        
+    }
 }
 
 class ProductsViewController: UIViewController {
@@ -66,6 +77,7 @@ extension ProductsViewController: UITableViewDataSource{
             fatalError()
         }
         
+        cell.download(image: product.image)
 //        cell.productImage.image = product.image // find how to load url in imageview *3rd party as well but try native way
         cell.productTitle.text = product.title
         cell.productDescription.text = product.description
@@ -78,6 +90,8 @@ extension ProductsViewController: UITableViewDataSource{
 
 //API Calls
 extension ProductsViewController{
+    
+    
     
     func fetchProducts(){
         Task{
