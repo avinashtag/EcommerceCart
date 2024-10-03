@@ -38,6 +38,9 @@ class ProductDetailViewController: UIViewController {
         
     }
 
+    @IBAction func backButtonPressed(_ sender: Any) {
+        self.navigationController?.popViewController(animated: true)
+    }
     /*
      MARK: - Navigation
 
