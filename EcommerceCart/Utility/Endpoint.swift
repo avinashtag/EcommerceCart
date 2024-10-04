@@ -65,35 +65,36 @@ class Network: NSObject, URLSessionTaskDelegate {
         return response
     }
     
-    func urlSession(_ session: URLSession, didReceive challenge: URLAuthenticationChallenge, completionHandler: @escaping (URLSession.AuthChallengeDisposition, URLCredential?) -> Void) {
-
-         guard let serverTrust = challenge.protectionSpace.serverTrust,
-         let certificate = SecTrustGetCertificateAtIndex(serverTrust, 0)
-         else { completionHandler(.performDefaultHandling, nil); return }
-
-         let policy = NSMutableArray()
-         policy.add(SecPolicyCreateSSL(true, challenge.protectionSpace.host as CFString))
-
-         let isServerTrusted = SecTrustEvaluateWithError(serverTrust, nil)
-
-         let remoteCertificateData: NSData = SecCertificateCopyData (certificate)
-
- //        let pathToCertificate = Bundle.main.path(forResource: "certificate", ofType: "cer")
- //        let localCertificateData: NSData = NSData.init (contentsOfFile: pathToCertificate!)!
- //        && remoteCertificateData.isEqual (to: localCertificateData as Data)
-         if (isServerTrusted ) {
-
-             let credential: URLCredential = URLCredential(trust: serverTrust)
-             completionHandler (.useCredential, credential)
-             print( "Certification pinning is successfull")
-         }
-         else{
-             completionHandler(.cancelAuthenticationChallenge, nil)
-         }
-
-
-         // Pinning failed completionHandler(URLSession.AuthChallengeDisposition.cancelAuthenticationChallenge, nil)
-     }
+    
+//    func urlSession(_ session: URLSession, didReceive challenge: URLAuthenticationChallenge, completionHandler: @escaping (URLSession.AuthChallengeDisposition, URLCredential?) -> Void) {
+//
+//         guard let serverTrust = challenge.protectionSpace.serverTrust,
+//         let certificate = SecTrustGetCertificateAtIndex(serverTrust, 0)
+//         else { completionHandler(.performDefaultHandling, nil); return }
+//
+//         let policy = NSMutableArray()
+//         policy.add(SecPolicyCreateSSL(true, challenge.protectionSpace.host as CFString))
+//
+//         let isServerTrusted = SecTrustEvaluateWithError(serverTrust, nil)
+//
+//         let remoteCertificateData: NSData = SecCertificateCopyData (certificate)
+//
+// //        let pathToCertificate = Bundle.main.path(forResource: "certificate", ofType: "cer")
+// //        let localCertificateData: NSData = NSData.init (contentsOfFile: pathToCertificate!)!
+// //        && remoteCertificateData.isEqual (to: localCertificateData as Data)
+//         if (isServerTrusted ) {
+//
+//             let credential: URLCredential = URLCredential(trust: serverTrust)
+//             completionHandler (.useCredential, credential)
+//             print( "Certification pinning is successfull")
+//         }
+//         else{
+//             completionHandler(.cancelAuthenticationChallenge, nil)
+//         }
+//
+//
+//         // Pinning failed completionHandler(URLSession.AuthChallengeDisposition.cancelAuthenticationChallenge, nil)
+//     }
 
     
 }

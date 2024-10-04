@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import CoreData
 import UIKit
 
 class Helper {
@@ -21,5 +22,7 @@ class Helper {
         toolbar.items = [flexSpace, doneButton]
         textField.inputAccessoryView = toolbar
     }
+    
+    
 }
 

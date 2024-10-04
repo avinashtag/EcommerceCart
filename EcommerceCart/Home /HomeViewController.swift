@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import CoreData
 
 class HomeViewController: UIViewController{
     @IBOutlet weak var searchBar: UITextField!
@@ -32,7 +33,7 @@ class HomeViewController: UIViewController{
         homeCollectionView.delegate = self
         homeCollectionView.dataSource = self
         
-        apiGrouped.enter()
+       /* apiGrouped.enter()
             self.fetchProducts()// 2 min
             //Product1
         
@@ -43,12 +44,14 @@ class HomeViewController: UIViewController{
         apiGrouped.notify(queue: myqueue) { [weak self ] in
             guard let self = self else { return }
             guard let productsCategories = self.productCatogries else { return }
-            self.products?.append(contentsOf: productsCategories)
+            self.products?.append(contentsOf: productsCategories) */
+                                                                
+        self.products = self.fetchProductsFromCoreData()
 
             DispatchQueue.main.async {
                 self.homeCollectionView.reloadData()
             }
-        }
+//        }
         
         //Collection show combine Products
 
@@ -234,6 +237,7 @@ extension HomeViewController{
         Task{
             do{
                 products = try await Products.Request().load()
+                saveProductStructToCoreData(products: products ?? [])
                 //Always call UI on main thread
                 //Switch to main thread
                 //****GCD- Grand Central Dispatch - Read on developer.apple ?****
@@ -268,6 +272,47 @@ extension HomeViewController{
         
         //Which one is better
         
+    }
+    
+    func fetchProductsFromCoreData() -> [Products.Product] {
+        let context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
+        let fetchRequest = NSFetchRequest<ProductDataEntity>(entityName: "ProductDataEntity")
+        
+        do {
+            let coreDataProducts = try context.fetch(fetchRequest)
+            
+            // Convert Core Data objects to ProductModel
+            return coreDataProducts.map { product in
+                let ratingModel = Products.Rating(rate: product.rating?.rate ?? 0, count: Int(product.rating?.count ?? 0))
+                return Products.Product(id: Int(product.id),
+                                        title: product.title ?? "",
+                                        price: product.price,
+                                        description: product.productDescription ?? "",
+                                        category: Products.Category(rawValue: product.category ?? "")! ,//TC
+                                        image: product.imageURL ?? "",
+                                        rating: ratingModel)
+            }
+        } catch let error as NSError {
+            print("Could not fetch products: \(error), \(error.userInfo)")
+            return []
+        }
+    }
+    
+    
+    func saveProductStructToCoreData(products: [Products.Product]) {
+        let context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
+        
+        for product in products {
+            let coreDataProduct = product.toCoreDataProduct(context: context)
+            context.insert(coreDataProduct)
+        }
+        
+        do {
+            try context.save()
+            print("Product saved successfully!")
+        } catch let error {
+            print("Failed to save product: \(error)")
+        }
     }
 
 }
