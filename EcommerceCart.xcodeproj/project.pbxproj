@@ -45,6 +45,9 @@
 		E17EB2522C996EBE0071A031 /* Products.swift in Sources */ = {isa = PBXBuildFile; fileRef = E17EB2512C996EBE0071A031 /* Products.swift */; };
 		E17EB2532C996EBE0071A031 /* Products.swift in Sources */ = {isa = PBXBuildFile; fileRef = E17EB2512C996EBE0071A031 /* Products.swift */; };
 		E17EB2542C996EBE0071A031 /* Products.swift in Sources */ = {isa = PBXBuildFile; fileRef = E17EB2512C996EBE0071A031 /* Products.swift */; };
+		E1875B3E2CAFB4D40031C173 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1875B3D2CAFB4D40031C173 /* DataManager.swift */; };
+		E1875B3F2CAFB4D40031C173 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1875B3D2CAFB4D40031C173 /* DataManager.swift */; };
+		E1875B402CAFB4D40031C173 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1875B3D2CAFB4D40031C173 /* DataManager.swift */; };
 		E1CD0FB82CA283C000B69C05 /* Bundle+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1CD0FB72CA283C000B69C05 /* Bundle+Extension.swift */; };
 		E1CD0FB92CA283C000B69C05 /* Bundle+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1CD0FB72CA283C000B69C05 /* Bundle+Extension.swift */; };
 		E1CD0FBA2CA283C000B69C05 /* Bundle+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1CD0FB72CA283C000B69C05 /* Bundle+Extension.swift */; };
@@ -117,6 +120,7 @@
 		E17EB2492C99685F0071A031 /* Response.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Response.swift; sourceTree = "<group>"; };
 		E17EB24D2C9968750071A031 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		E17EB2512C996EBE0071A031 /* Products.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Products.swift; sourceTree = "<group>"; };
+		E1875B3D2CAFB4D40031C173 /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
 		E1CD0FB72CA283C000B69C05 /* Bundle+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bundle+Extension.swift"; sourceTree = "<group>"; };
 		E1CD0FBB2CA2846B00B69C05 /* Products.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Products.json; sourceTree = "<group>"; };
 		EA2505382CADBB70007387BE /* EcommerceCartDataModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = EcommerceCartDataModel.xcdatamodel; sourceTree = "<group>"; };
@@ -246,6 +250,7 @@
 				E17EB24D2C9968750071A031 /* Constants.swift */,
 				E1CD0FB72CA283C000B69C05 /* Bundle+Extension.swift */,
 				EAD1B7862CA9638800F9C38B /* UIImageView+Extension.swift */,
+				E1875B3D2CAFB4D40031C173 /* DataManager.swift */,
 			);
 			path = Utility;
 			sourceTree = "<group>";
@@ -403,6 +408,7 @@
 				E119354C2C97F586004D84F9 /* SignInFormViewController.swift in Sources */,
 				E121DB142C89796D007D06C9 /* SignUpFormViewController.swift in Sources */,
 				E17EB2522C996EBE0071A031 /* Products.swift in Sources */,
+				E1875B3E2CAFB4D40031C173 /* DataManager.swift in Sources */,
 				E121DAE12C897425007D06C9 /* SceneDelegate.swift in Sources */,
 				EA55D4CC2C970BD100028641 /* LoginTableViewController.swift in Sources */,
 			);
@@ -422,6 +428,7 @@
 				E119354D2C97F586004D84F9 /* SignInFormViewController.swift in Sources */,
 				E17A547D2C9E84A400C62762 /* ProductsViewController.swift in Sources */,
 				E121DB152C89796D007D06C9 /* SignUpFormViewController.swift in Sources */,
+				E1875B3F2CAFB4D40031C173 /* DataManager.swift in Sources */,
 				E103B83D2CA532A3007BCB25 /* ProductDetailViewController.swift in Sources */,
 				EA55D4D52CA063E300028641 /* SectionHeaderView.swift in Sources */,
 				EA25053A2CADBB70007387BE /* EcommerceCartDataModel.xcdatamodeld in Sources */,
@@ -458,6 +465,7 @@
 				EA55D4D62CA063E300028641 /* SectionHeaderView.swift in Sources */,
 				E119354E2C97F586004D84F9 /* SignInFormViewController.swift in Sources */,
 				E121DB022C897428007D06C9 /* EcommerceCartUITestsLaunchTests.swift in Sources */,
+				E1875B402CAFB4D40031C173 /* DataManager.swift in Sources */,
 				EA55D4D22C98B70900028641 /* HomeViewController.swift in Sources */,
 				EA55D4CE2C970BD100028641 /* LoginTableViewController.swift in Sources */,
 			);

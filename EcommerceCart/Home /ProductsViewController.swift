@@ -40,6 +40,8 @@ class ProductsViewController: UIViewController {
         DispatchQueue.global().async {
             
         }
+        
+        (UIApplication.shared as? AppDelegate)?.saveContext()
     }
     
 
