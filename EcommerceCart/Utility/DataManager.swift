@@ -39,11 +39,11 @@ class DataManager{
         context.mergeChanges(fromContextDidSave: Notification(name: Notification.Name(rawValue: "MergeChanges")))
     }
     
-    //FetchQuery
-    //Predicate
-    //Sorting
-    //Relationships
-    //Transient
+    //FetchQuery - done 
+    //Predicate - done
+    //Sorting - done
+    //Relationships done
+    //Transient - will not save in persistent store , short term
     
 
 }

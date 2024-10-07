@@ -11,7 +11,7 @@ import CoreData
 class HomeViewController: UIViewController{
     @IBOutlet weak var searchBar: UITextField!
     @IBOutlet weak var homeCollectionView: UICollectionView!
-    private var products: [Products.Product]?
+    private var products: [ProductDataEntity]?
     private var productCatogries: [Products.Product]?
 
     var selectedProduct: Products.Product?
@@ -45,12 +45,17 @@ class HomeViewController: UIViewController{
             guard let self = self else { return }
             guard let productsCategories = self.productCatogries else { return }
             self.products?.append(contentsOf: productsCategories) */
-                                                                
-        self.products = self.fetchProductsFromCoreData()
+                       
+//        fetchProducts()
+        products = try? fetchProdcuts(from: DataManager.shared.viewContext)
+        let ratings = try? fetchRatings(from: DataManager.shared.viewContext)
+        guard let id = products?.first else { return }
+        try? DataManager.shared.viewContext.delete(id)
+        guard let idp = products?.first?.objectID else { return }
+        let object =  DataManager.shared.viewContext.object(with: idp) as? ProductDataEntity
+        
 
-            DispatchQueue.main.async {
-                self.homeCollectionView.reloadData()
-            }
+        self.homeCollectionView.reloadData()
 //        }
         
         //Collection show combine Products
@@ -204,8 +209,8 @@ extension HomeViewController: UICollectionViewDelegate, UICollectionViewDataSour
         }
         
         // Configure the cell with title, price, and imageURL (dummy URLs here)
-        let imageURL = URL(string: product.image) // Replace with real URL from your API
-        cell.configureCell(with: imageURL, title: product.title, price: "$\(product.price)")
+        let imageURL = URL(string: product.imageURL ?? "") // Replace with real URL from your API
+        cell.configureCell(with: imageURL, title: product.title ?? "", price: "$\(product.price)")
         
         return cell
     }
@@ -221,7 +226,7 @@ extension HomeViewController: UICollectionViewDelegate, UICollectionViewDataSour
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         // Get the selected object
-        selectedProduct = products?[indexPath.row]
+//        selectedProduct = products?[indexPath.row]
         
         // Perform the segue to the next view controller
         performSegue(withIdentifier: "\(ProductDetailViewController.self)Segue", sender: self)
@@ -233,15 +238,47 @@ extension HomeViewController: UICollectionViewDelegate, UICollectionViewDataSour
 
 extension HomeViewController{
     
+    
+    
+    func fetchProdcuts( from context: NSManagedObjectContext)throws-> [ProductDataEntity]{
+        
+        let fetchrequest = NSFetchRequest<ProductDataEntity>(entityName: "\(ProductDataEntity.self)")
+        
+        //predicate
+        let predicate = NSPredicate(format: "SELF.title is Like %@", "")
+        let predicate2 = NSPredicate(format: "SELF.price > %@", "")
+        fetchrequest.predicate = NSCompoundPredicate(andPredicateWithSubpredicates: [predicate, predicate2])
+        fetchrequest.predicate = NSCompoundPredicate(orPredicateWithSubpredicates: [predicate, predicate2])
+        fetchrequest.predicate = predicate
+        
+        
+        
+        let sort = NSSortDescriptor(key: "id", ascending: true)
+        let sortprice = NSSortDescriptor(key: "price", ascending: true)
+        fetchrequest.sortDescriptors = [sort, sortprice]
+        return try context.fetch(fetchrequest)
+    }
+    
+    func fetchRatings( from context: NSManagedObjectContext)throws-> [RatingDataEntity]{
+        
+        let fetchrequest = NSFetchRequest<RatingDataEntity>(entityName: "\(RatingDataEntity.self)")
+        return try context.fetch(fetchrequest)
+    }
+
+    
     func fetchProducts(){
         Task{
             do{
-                products = try await Products.Request().load()
-                saveProductStructToCoreData(products: products ?? [])
+                let products = try await Products.Request().load()
+                saveProductStructToCoreData(products: products)
                 //Always call UI on main thread
                 //Switch to main thread
                 //****GCD- Grand Central Dispatch - Read on developer.apple ?****
-                apiGrouped.leave()
+//                apiGrouped.leave()
+                
+                
+                
+                
             }
             catch{
                 print(error)
@@ -274,33 +311,33 @@ extension HomeViewController{
         
     }
     
-    func fetchProductsFromCoreData() -> [Products.Product] {
-        let context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
-        let fetchRequest = NSFetchRequest<ProductDataEntity>(entityName: "ProductDataEntity")
-        
-        do {
-            let coreDataProducts = try context.fetch(fetchRequest)
-            
-            // Convert Core Data objects to ProductModel
-            return coreDataProducts.map { product in
-                let ratingModel = Products.Rating(rate: product.rating?.rate ?? 0, count: Int(product.rating?.count ?? 0))
-                return Products.Product(id: Int(product.id),
-                                        title: product.title ?? "",
-                                        price: product.price,
-                                        description: product.productDescription ?? "",
-                                        category: Products.Category(rawValue: product.category ?? "")! ,//TC
-                                        image: product.imageURL ?? "",
-                                        rating: ratingModel)
-            }
-        } catch let error as NSError {
-            print("Could not fetch products: \(error), \(error.userInfo)")
-            return []
-        }
-    }
-    
-    
+//    func fetchProductsFromCoreData() -> [Products.Product] {
+//        let context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
+//        let fetchRequest = NSFetchRequest<ProductDataEntity>(entityName: "ProductDataEntity")
+//        
+//        do {
+//            let coreDataProducts = try context.fetch(fetchRequest)
+//            
+//            // Convert Core Data objects to ProductModel
+//            return coreDataProducts.map { product in
+//                let ratingModel = Products.Rating(rate: product.rating?.rate ?? 0, count: Int(product.rating?.count ?? 0))
+//                return Products.Product(id: Int(product.id),
+//                                        title: product.title ?? "",
+//                                        price: product.price,
+//                                        description: product.productDescription ?? "",
+//                                        category: Products.Category(rawValue: product.category ?? "")! ,//TC
+//                                        image: product.imageURL ?? "",
+//                                        rating: ratingModel)
+//            }
+//        } catch let error as NSError {
+//            print("Could not fetch products: \(error), \(error.userInfo)")
+//            return []
+//        }
+//    }
+//    
+//    
     func saveProductStructToCoreData(products: [Products.Product]) {
-        let context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
+        let context = DataManager.shared.writeContext
         
         for product in products {
             let coreDataProduct = product.toCoreDataProduct(context: context)
@@ -309,6 +346,7 @@ extension HomeViewController{
         
         do {
             try context.save()
+            DataManager.shared.merge(context:context)
             print("Product saved successfully!")
         } catch let error {
             print("Failed to save product: \(error)")

@@ -41,7 +41,6 @@ class ProductsViewController: UIViewController {
             
         }
         
-        (UIApplication.shared as? AppDelegate)?.saveContext()
     }
     
 
