@@ -245,12 +245,12 @@ extension HomeViewController{
         let fetchrequest = NSFetchRequest<ProductDataEntity>(entityName: "\(ProductDataEntity.self)")
         
         //predicate
-        let predicate = NSPredicate(format: "SELF.title is Like %@", "")
-        let predicate2 = NSPredicate(format: "SELF.price > %@", "")
-        fetchrequest.predicate = NSCompoundPredicate(andPredicateWithSubpredicates: [predicate, predicate2])
-        fetchrequest.predicate = NSCompoundPredicate(orPredicateWithSubpredicates: [predicate, predicate2])
-        fetchrequest.predicate = predicate
-        
+//        let predicate = NSPredicate(format: "SELF.title is Like %@", "")
+//        let predicate2 = NSPredicate(format: "SELF.price > %@", "")
+//        fetchrequest.predicate = NSCompoundPredicate(andPredicateWithSubpredicates: [predicate, predicate2])
+//        fetchrequest.predicate = NSCompoundPredicate(orPredicateWithSubpredicates: [predicate, predicate2])
+//        fetchrequest.predicate = predicate
+//        
         
         
         let sort = NSSortDescriptor(key: "id", ascending: true)
