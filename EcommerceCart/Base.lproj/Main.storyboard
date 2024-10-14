@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="vpz-Hd-Li7">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="23094" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="vpz-Hd-Li7">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22685"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23084"/>
         <capability name="Map view configurations" minToolsVersion="14.0"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -1011,17 +1011,31 @@ Please login or signup.</string>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RUp-5B-FOk">
-                                <rect key="frame" x="0.0" y="103" width="393" height="666"/>
+                                <rect key="frame" x="0.0" y="103" width="393" height="596"/>
                                 <standardMapConfiguration key="preferredConfiguration"/>
                             </mapView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jts-7w-uBs">
+                                <rect key="frame" x="134" y="707" width="126" height="35"/>
+                                <color key="backgroundColor" name="AccentColor"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Track Vehicle">
+                                    <color key="baseForegroundColor" systemColor="groupTableViewBackgroundColor"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="startTheJourney:" destination="YFR-mL-PJF" eventType="touchUpInside" id="FaS-Fo-xMK"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="b0B-ue-dlr"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="b0B-ue-dlr" firstAttribute="trailing" secondItem="Jts-7w-uBs" secondAttribute="trailing" constant="133" id="2xR-Qh-KqP"/>
                             <constraint firstItem="RUp-5B-FOk" firstAttribute="top" secondItem="b0B-ue-dlr" secondAttribute="top" id="L9y-Tf-uyO"/>
                             <constraint firstItem="b0B-ue-dlr" firstAttribute="trailing" secondItem="RUp-5B-FOk" secondAttribute="trailing" id="N8U-ZA-zW9"/>
-                            <constraint firstItem="b0B-ue-dlr" firstAttribute="bottom" secondItem="RUp-5B-FOk" secondAttribute="bottom" id="mQw-Xk-hDe"/>
+                            <constraint firstItem="b0B-ue-dlr" firstAttribute="bottom" secondItem="Jts-7w-uBs" secondAttribute="bottom" constant="27" id="QVo-03-uDs"/>
                             <constraint firstItem="RUp-5B-FOk" firstAttribute="leading" secondItem="b0B-ue-dlr" secondAttribute="leading" id="mVD-iJ-K9c"/>
+                            <constraint firstItem="Jts-7w-uBs" firstAttribute="leading" secondItem="b0B-ue-dlr" secondAttribute="leading" constant="134" id="x44-CF-9pu"/>
+                            <constraint firstItem="Jts-7w-uBs" firstAttribute="top" secondItem="RUp-5B-FOk" secondAttribute="bottom" constant="8" symbolic="YES" id="zJs-ck-GEX"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="jrs-vQ-oMv"/>
@@ -1031,7 +1045,7 @@ Please login or signup.</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0qc-KC-CPf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5647" y="1412"/>
+            <point key="canvasLocation" x="5646.5648854961828" y="1411.9718309859156"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="z25-Ja-xp0">
@@ -1152,6 +1166,9 @@ Please login or signup.</string>
         <namedColor name="AccentColor">
             <color red="0.36078431372549019" green="0.36862745098039218" blue="0.57647058823529407" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
+        <systemColor name="groupTableViewBackgroundColor">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

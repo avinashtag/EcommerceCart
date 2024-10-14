@@ -60,6 +60,9 @@
 		EA2505392CADBB70007387BE /* EcommerceCartDataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = EA2505372CADBB70007387BE /* EcommerceCartDataModel.xcdatamodeld */; };
 		EA25053A2CADBB70007387BE /* EcommerceCartDataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = EA2505372CADBB70007387BE /* EcommerceCartDataModel.xcdatamodeld */; };
 		EA25053B2CADBB70007387BE /* EcommerceCartDataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = EA2505372CADBB70007387BE /* EcommerceCartDataModel.xcdatamodeld */; };
+		EA25054D2CBD5436007387BE /* Routes.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA25054C2CBD5436007387BE /* Routes.swift */; };
+		EA25054E2CBD5436007387BE /* Routes.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA25054C2CBD5436007387BE /* Routes.swift */; };
+		EA25054F2CBD5436007387BE /* Routes.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA25054C2CBD5436007387BE /* Routes.swift */; };
 		EA55D4C92C970BA400028641 /* AuthTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA55D4C72C970BA400028641 /* AuthTableViewCell.swift */; };
 		EA55D4CA2C970BA400028641 /* AuthTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA55D4C72C970BA400028641 /* AuthTableViewCell.swift */; };
 		EA55D4CC2C970BD100028641 /* LoginTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA55D4CB2C970BD100028641 /* LoginTableViewController.swift */; };
@@ -128,6 +131,7 @@
 		E1CD0FB72CA283C000B69C05 /* Bundle+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bundle+Extension.swift"; sourceTree = "<group>"; };
 		E1CD0FBB2CA2846B00B69C05 /* Products.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Products.json; sourceTree = "<group>"; };
 		EA2505382CADBB70007387BE /* EcommerceCartDataModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = EcommerceCartDataModel.xcdatamodel; sourceTree = "<group>"; };
+		EA25054C2CBD5436007387BE /* Routes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Routes.swift; sourceTree = "<group>"; };
 		EA55D4C72C970BA400028641 /* AuthTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthTableViewCell.swift; sourceTree = "<group>"; };
 		EA55D4CB2C970BD100028641 /* LoginTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginTableViewController.swift; sourceTree = "<group>"; };
 		EA55D4CF2C98B70900028641 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
@@ -229,6 +233,7 @@
 				E119354B2C97F586004D84F9 /* SignInFormViewController.swift */,
 				E17A547B2C9E84A400C62762 /* ProductsViewController.swift */,
 				E17EB2512C996EBE0071A031 /* Products.swift */,
+				EA25054C2CBD5436007387BE /* Routes.swift */,
 				EA55D4CF2C98B70900028641 /* HomeViewController.swift */,
 				EA55D4D32CA063E300028641 /* SectionHeaderView.swift */,
 				EA55D4D72CA1295200028641 /* CollectionViewCell.swift */,
@@ -395,6 +400,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EA55D4D82CA1295200028641 /* CollectionViewCell.swift in Sources */,
+				EA25054D2CBD5436007387BE /* Routes.swift in Sources */,
 				E1CD0FB82CA283C000B69C05 /* Bundle+Extension.swift in Sources */,
 				EAD1B7872CA9638800F9C38B /* UIImageView+Extension.swift in Sources */,
 				E121DB102C8974C6007D06C9 /* RegistrationViewController.swift in Sources */,
@@ -445,6 +451,7 @@
 				EA55D4C92C970BA400028641 /* AuthTableViewCell.swift in Sources */,
 				EAD1B7882CA9638800F9C38B /* UIImageView+Extension.swift in Sources */,
 				E17EB24F2C9968750071A031 /* Constants.swift in Sources */,
+				EA25054E2CBD5436007387BE /* Routes.swift in Sources */,
 				EA55D4D12C98B70900028641 /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -454,6 +461,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EA55D4CA2C970BA400028641 /* AuthTableViewCell.swift in Sources */,
+				EA25054F2CBD5436007387BE /* Routes.swift in Sources */,
 				E1CD0FBA2CA283C000B69C05 /* Bundle+Extension.swift in Sources */,
 				EAD1B7892CA9638800F9C38B /* UIImageView+Extension.swift in Sources */,
 				E17EB2542C996EBE0071A031 /* Products.swift in Sources */,
