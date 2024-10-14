@@ -14,7 +14,7 @@ class HomeViewController: UIViewController{
     private var products: [ProductDataEntity]?
     private var productCatogries: [Products.Product]?
 
-    var selectedProduct: Products.Product?
+    var selectedProduct: ProductDataEntity?
     
     var myqueue: DispatchQueue = DispatchQueue(label: "Bhavya", qos: .background)
     
@@ -226,7 +226,7 @@ extension HomeViewController: UICollectionViewDelegate, UICollectionViewDataSour
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         // Get the selected object
-//        selectedProduct = products?[indexPath.row]
+        selectedProduct = products?[indexPath.row]
         
         // Perform the segue to the next view controller
         performSegue(withIdentifier: "\(ProductDetailViewController.self)Segue", sender: self)
@@ -245,11 +245,11 @@ extension HomeViewController{
         let fetchrequest = NSFetchRequest<ProductDataEntity>(entityName: "\(ProductDataEntity.self)")
         
         //predicate
-        let predicate = NSPredicate(format: "SELF.title is Like %@", "")
-        let predicate2 = NSPredicate(format: "SELF.price > %@", "")
-        fetchrequest.predicate = NSCompoundPredicate(andPredicateWithSubpredicates: [predicate, predicate2])
-        fetchrequest.predicate = NSCompoundPredicate(orPredicateWithSubpredicates: [predicate, predicate2])
-        fetchrequest.predicate = predicate
+//        let predicate = NSPredicate(format: "SELF.title is Like %@", "")
+//        let predicate2 = NSPredicate(format: "SELF.price > %@", "")
+//        fetchrequest.predicate = NSCompoundPredicate(andPredicateWithSubpredicates: [predicate, predicate2])
+//        fetchrequest.predicate = NSCompoundPredicate(orPredicateWithSubpredicates: [predicate, predicate2])
+//        fetchrequest.predicate = predicate
         
         
         

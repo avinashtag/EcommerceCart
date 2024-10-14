@@ -16,21 +16,21 @@ class ProductDetailViewController: UIViewController {
     @IBOutlet weak var category: UILabel!
     @IBOutlet weak var rating: UILabel!
   
-    var product: Products.Product?
+    var product: ProductDataEntity?
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
         if let receivedProduct = product {
           
-            if let imageUrl = URL(string: receivedProduct.image) {
+            if let imageUrl = URL(string: receivedProduct.imageURL ?? "") {
                 productImage.loadImage(from: imageUrl)
             }
             productTitle.text = receivedProduct.title
-            productDescription.text = receivedProduct.description
+            productDescription.text = receivedProduct.productDescription
             price.text = "$\(receivedProduct.price)"
-            category.text = receivedProduct.category.rawValue
-            rating.text = "\(String(receivedProduct.rating.rate))/\(String(receivedProduct.rating.count))"
+            category.text = receivedProduct.category
+            rating.text = "\(String(receivedProduct.rating?.rate ?? 0))/\(String(receivedProduct.rating?.count ?? 0))"
             
         }else{
             fatalError()

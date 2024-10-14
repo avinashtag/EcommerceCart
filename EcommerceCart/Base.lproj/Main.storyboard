@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="23094" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="vpz-Hd-Li7">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="vpz-Hd-Li7">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23084"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22685"/>
+        <capability name="Map view configurations" minToolsVersion="14.0"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
@@ -982,6 +983,11 @@ Please login or signup.</string>
                                 <action selector="backButtonPressed:" destination="tLc-Co-cq7" id="qco-10-okN"/>
                             </connections>
                         </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" title="Map" image="map" catalog="system" id="992-jv-l3q">
+                            <connections>
+                                <segue destination="YFR-mL-PJF" kind="show" identifier="MapView" id="E3P-Z2-sk7"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
                         <outlet property="category" destination="BMt-ff-hdH" id="9eL-MG-DyL"/>
@@ -995,6 +1001,37 @@ Please login or signup.</string>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fZ6-hN-m7l" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="4742.7480916030536" y="1411.9718309859156"/>
+        </scene>
+        <!--Map View Controller-->
+        <scene sceneID="etg-Zw-cyH">
+            <objects>
+                <viewController storyboardIdentifier="MapViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="YFR-mL-PJF" customClass="MapViewController" customModule="EcommerceCart" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="4DG-Pc-u1b">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RUp-5B-FOk">
+                                <rect key="frame" x="0.0" y="103" width="393" height="666"/>
+                                <standardMapConfiguration key="preferredConfiguration"/>
+                            </mapView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="b0B-ue-dlr"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="RUp-5B-FOk" firstAttribute="top" secondItem="b0B-ue-dlr" secondAttribute="top" id="L9y-Tf-uyO"/>
+                            <constraint firstItem="b0B-ue-dlr" firstAttribute="trailing" secondItem="RUp-5B-FOk" secondAttribute="trailing" id="N8U-ZA-zW9"/>
+                            <constraint firstItem="b0B-ue-dlr" firstAttribute="bottom" secondItem="RUp-5B-FOk" secondAttribute="bottom" id="mQw-Xk-hDe"/>
+                            <constraint firstItem="RUp-5B-FOk" firstAttribute="leading" secondItem="b0B-ue-dlr" secondAttribute="leading" id="mVD-iJ-K9c"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="jrs-vQ-oMv"/>
+                    <connections>
+                        <outlet property="mapView" destination="RUp-5B-FOk" id="tJn-xR-UlM"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0qc-KC-CPf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5647" y="1412"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="z25-Ja-xp0">
@@ -1110,6 +1147,7 @@ Please login or signup.</string>
         <image name="Registration" width="400" height="450"/>
         <image name="cart.fill" catalog="system" width="128" height="102"/>
         <image name="homekit" catalog="system" width="128" height="104"/>
+        <image name="map" catalog="system" width="128" height="112"/>
         <image name="person.fill" catalog="system" width="128" height="120"/>
         <namedColor name="AccentColor">
             <color red="0.36078431372549019" green="0.36862745098039218" blue="0.57647058823529407" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
