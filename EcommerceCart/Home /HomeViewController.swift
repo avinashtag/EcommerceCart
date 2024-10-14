@@ -250,7 +250,7 @@ extension HomeViewController{
 //        fetchrequest.predicate = NSCompoundPredicate(andPredicateWithSubpredicates: [predicate, predicate2])
 //        fetchrequest.predicate = NSCompoundPredicate(orPredicateWithSubpredicates: [predicate, predicate2])
 //        fetchrequest.predicate = predicate
-        
+//        
         
         
         let sort = NSSortDescriptor(key: "id", ascending: true)
