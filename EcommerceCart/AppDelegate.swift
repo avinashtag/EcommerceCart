@@ -8,6 +8,15 @@
 import UIKit
 import CoreData
 
+//MVVM
+/*
+ 1. RXSwift - 3rd Party
+ 2. combine framework - Publisher sink recieve - by Apple
+ 3. https://medium.com/@abhilash.mathur1891/mvvm-in-ios-swift-aa1448a66fb4
+    See product List View Controller 
+ */
+
+
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
 

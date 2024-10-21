@@ -238,6 +238,9 @@ extension HomeViewController: UICollectionViewDelegate, UICollectionViewDataSour
 
 extension HomeViewController{
     
+    func dealloc(){
+        
+    }
     
     
     func fetchProdcuts( from context: NSManagedObjectContext)throws-> [ProductDataEntity]{

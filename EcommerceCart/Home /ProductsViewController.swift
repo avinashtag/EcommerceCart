@@ -19,11 +19,28 @@ class ProductCell: UITableViewCell{
         
     }
 }
+class ProductsModel : NSObject {
+   
+    private(set) var products :  [Products.Product]? {
+           didSet {
+               self.bindViewModelToController()
+           }
+       }
+    var bindViewModelToController : (() -> ()) = {}
+
+    override init() {
+        super.init()
+        Task{
+            products = try await Products.Request().load()
+        }
+    }
+}
 
 class ProductsViewController: UIViewController {
 
     @IBOutlet weak var tableView: UITableView!
-    private var products: [Products.Product]?
+    var products: ProductsModel?
+    var request: Products.Request?
     
     var myqueue: DispatchQueue = DispatchQueue(label: "Aswini", qos: .background)
 
@@ -39,6 +56,7 @@ class ProductsViewController: UIViewController {
         
         DispatchQueue.global().async {
             
+            products?.products = []
         }
         
     }
@@ -58,12 +76,12 @@ class ProductsViewController: UIViewController {
 
 extension ProductsViewController: UITableViewDataSource{
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return products?.count ?? 0
+        return products?.products?.count ?? 0
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
-        guard let cell = tableView.dequeueReusableCell(withIdentifier: "\(ProductCell.self)") as? ProductCell , let product = products?[indexPath.row] else {
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: "\(ProductCell.self)") as? ProductCell , let product = products?.products?[indexPath.row] else {
             fatalError()
         }
         
@@ -81,22 +99,33 @@ extension ProductsViewController: UITableViewDataSource{
 extension ProductsViewController{
     
     func fetchProducts(){
-        Task{
-            do{
-                products = try await Products.Request().load()
-                //Always call UI on main thread
-                //Switch to main thread
-                //****GCD- Grand Central Dispatch - Read on developer.apple ?****
-                
-                DispatchQueue.main.async {
-                    self.tableView.reloadData()
-                }
-                
-            }
-            catch{
-                print(error)
+        
+        self.products =  ProductsModel()
+        self.products?.bindViewModelToController = {
+            DispatchQueue.main.async {
+                self.tableView.reloadData()
             }
         }
+//        Task{
+//            do{
+//                
+//                self.products.bindEmployeeViewModelToController = {
+//                    self.updateDataSource()
+//                }
+//                products = try await Products.Request().load()
+//                //Always call UI on main thread
+//                //Switch to main thread
+//                //****GCD- Grand Central Dispatch - Read on developer.apple ?****
+//                
+//                DispatchQueue.main.async {
+//                    self.tableView.reloadData()
+//                }
+//                
+//            }
+//            catch{
+//                print(error)
+//            }
+//        }
     }
 }
 

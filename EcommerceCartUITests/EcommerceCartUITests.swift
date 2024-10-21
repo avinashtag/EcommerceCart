@@ -9,6 +9,8 @@ import XCTest
 
 final class EcommerceCartUITests: XCTestCase {
 
+    let app = XCUIApplication()
+
     override func setUpWithError() throws {
         // Put setup code here. This method is called before the invocation of each test method in the class.
 
@@ -24,7 +26,6 @@ final class EcommerceCartUITests: XCTestCase {
 
     func testExample() throws {
         // UI tests must launch the application that they test.
-        let app = XCUIApplication()
         app.launch()
 
         // Use XCTAssert and related functions to verify your tests produce the correct results.
@@ -38,4 +39,24 @@ final class EcommerceCartUITests: XCTestCase {
             }
         }
     }
+    
+    
+//    func testRegistration(){
+//        
+//        let signup = app.buttons.element
+//        si
+//        XCTAssert(app.buttons.element.exists, <#T##message: String##String#>)
+//    }
+    
+    func testTabBar(){
+        let newsTab = app.tabBars.buttons.element(boundBy: 0)
+        let bookmarkTab = app.tabBars.buttons.element(boundBy: 1)
+        
+//        let addPatientButton = app.navigationBars.buttons["person.fill.badge.plus"]
+        XCTAssert(newsTab.exists, "\(TabBarView.self)- News Tab Missing")
+        XCTAssert(bookmarkTab.exists, "\(TabBarView.self)- Bookmark Tab Missing")
+        XCTAssert(newsTab.label == "News Feed", "\(TabBarView.self)- News Tab Wrong Title")
+        XCTAssert(bookmarkTab.label == "Bookmark", "\(TabBarView.self)- News Tab Wrong Title")
+    }
+
 }

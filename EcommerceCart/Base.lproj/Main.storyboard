@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="23094" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="vpz-Hd-Li7">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="vpz-Hd-Li7">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23084"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22685"/>
         <capability name="Map view configurations" minToolsVersion="14.0"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -680,7 +680,6 @@ Please login or signup.</string>
                                                     </buttonConfiguration>
                                                     <connections>
                                                         <action selector="doSignIn:" destination="M6X-m3-l8i" eventType="touchUpInside" id="qH6-Zh-Qv1"/>
-                                                        <segue destination="IZn-Sq-dXw" kind="show" id="R3d-yG-ARw"/>
                                                     </connections>
                                                 </button>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TtA-oW-akz">
@@ -722,20 +721,47 @@ Please login or signup.</string>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="SmA-9k-png"/>
+                    <connections>
+                        <segue destination="IZn-Sq-dXw" kind="presentation" identifier="LoginSuccess" modalPresentationStyle="fullScreen" id="oIR-9A-PqY"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mzg-4O-mwe" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1685" y="732"/>
         </scene>
-        <!--View Controller-->
+        <!--Profile View Controller-->
         <scene sceneID="tBj-oD-2Qs">
             <objects>
-                <viewController id="Sqc-Kx-TVk" sceneMemberID="viewController">
+                <viewController id="Sqc-Kx-TVk" customClass="ProfileViewController" customModule="EcommerceCart" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="dXS-fi-jOP">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zd8-1B-SrS">
+                                <rect key="frame" x="20" y="64" width="353" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Logout"/>
+                                <connections>
+                                    <action selector="logout:" destination="Sqc-Kx-TVk" eventType="touchUpInside" id="Inf-UF-mCt"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="6nn-q7-CO2">
+                                <rect key="frame" x="146.66666666666666" y="139" width="100" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="LOB-Vm-P9h"/>
+                                    <constraint firstAttribute="width" secondItem="6nn-q7-CO2" secondAttribute="height" multiplier="1:1" id="mqa-JQ-h3T"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="yze-N2-H9U"/>
                         <color key="backgroundColor" systemColor="systemGray2Color"/>
+                        <constraints>
+                            <constraint firstItem="yze-N2-H9U" firstAttribute="trailing" secondItem="Zd8-1B-SrS" secondAttribute="trailing" constant="20" id="0Xp-Xv-Dbw"/>
+                            <constraint firstItem="Zd8-1B-SrS" firstAttribute="top" secondItem="yze-N2-H9U" secondAttribute="top" constant="20" id="1rG-OI-eVH"/>
+                            <constraint firstItem="6nn-q7-CO2" firstAttribute="top" secondItem="Zd8-1B-SrS" secondAttribute="bottom" constant="40" id="mRi-36-yQg"/>
+                            <constraint firstItem="6nn-q7-CO2" firstAttribute="centerX" secondItem="dXS-fi-jOP" secondAttribute="centerX" id="u7J-TI-TnZ"/>
+                            <constraint firstItem="Zd8-1B-SrS" firstAttribute="leading" secondItem="yze-N2-H9U" secondAttribute="leading" constant="20" id="x7Z-C3-KXK"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="o9n-ll-8Jw"/>
                 </viewController>
@@ -768,10 +794,10 @@ Please login or signup.</string>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iwm-ja-gHz">
-                                <rect key="frame" x="0.0" y="173" width="393" height="596"/>
+                                <rect key="frame" x="0.0" y="114" width="393" height="689"/>
                                 <subviews>
                                     <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="5ae-wp-ylr">
-                                        <rect key="frame" x="0.0" y="50" width="393" height="541"/>
+                                        <rect key="frame" x="0.0" y="50" width="393" height="634"/>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                         <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="qln-ML-6gE">
                                             <size key="itemSize" width="128" height="128"/>
@@ -804,7 +830,7 @@ Please login or signup.</string>
                                 </constraints>
                             </view>
                             <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ZiR-uv-qzw">
-                                <rect key="frame" x="15" y="143" width="363" height="40"/>
+                                <rect key="frame" x="15" y="84" width="363" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="r8a-Cc-cz7"/>
                                 </constraints>
@@ -873,7 +899,7 @@ Please login or signup.</string>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Szg-Me-Maf">
-                                <rect key="frame" x="0.0" y="103" width="393" height="666"/>
+                                <rect key="frame" x="0.0" y="44" width="393" height="759"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fwj-PN-2eY">
                                         <rect key="frame" x="0.0" y="0.0" width="393" height="414"/>
@@ -1011,11 +1037,11 @@ Please login or signup.</string>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RUp-5B-FOk">
-                                <rect key="frame" x="0.0" y="103" width="393" height="596"/>
+                                <rect key="frame" x="0.0" y="44" width="393" height="689"/>
                                 <standardMapConfiguration key="preferredConfiguration"/>
                             </mapView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jts-7w-uBs">
-                                <rect key="frame" x="134" y="707" width="126" height="35"/>
+                                <rect key="frame" x="134" y="741" width="126" height="35"/>
                                 <color key="backgroundColor" name="AccentColor"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Track Vehicle">
@@ -1074,7 +1100,7 @@ Please login or signup.</string>
                     <tabBarItem key="tabBarItem" title="Home" selectedImage="homekit" catalog="system" id="MSU-WD-aP3"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="T54-89-1My">
-                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" name="AccentColor"/>
                         <color key="barTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -1098,7 +1124,7 @@ Please login or signup.</string>
                     <tabBarItem key="tabBarItem" title="Cart" selectedImage="cart.fill" catalog="system" id="GI2-4s-GE9"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="3Vv-mU-dST">
-                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" name="AccentColor"/>
                     </navigationBar>
@@ -1118,7 +1144,7 @@ Please login or signup.</string>
                     <tabBarItem key="tabBarItem" title="Profile" selectedImage="person.fill" catalog="system" id="9LY-zb-mtQ"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="ohh-mQ-MZZ">
-                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" name="AccentColor"/>
                     </navigationBar>

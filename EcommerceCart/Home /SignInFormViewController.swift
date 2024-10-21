@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import NotificationBannerSwift
 
 class SignInFormCell: UITableViewCell, UITextFieldDelegate{
     @IBOutlet weak var `title`: UILabel!
@@ -131,12 +132,24 @@ extension SignInFormViewController: UITableViewDataSource{
             
         case 3:
             guard let cell = tableView.dequeueReusableCell(withIdentifier: "\(SignInFormFooter.self)", for: indexPath) as? SignInFormFooter else { fatalError() }
-            cell.doSign = {
+            cell.doSign = { [weak self] in
+                
+                
+                guard let self = self else { return }
                 //TODO: Sign in pressed
                 let emailRow = tableView.cellForRow(at: IndexPath(row: 1, section: 0)) as? SignInFormCell
                 let passwordRow = tableView.cellForRow(at: IndexPath(row: 2, section: 0)) as? SignInFormCell
                 let email = emailRow?.textField.text ?? ""
                 let password = passwordRow?.textField.text ?? ""
+                
+                
+                guard password == "bhavya123" else {
+                    
+                    let banner = NotificationBanner(title: "Error", subtitle: "Wrong Password", style: .danger)
+                    banner.show()
+                    return
+                }
+                self.performSegue(withIdentifier: "LoginSuccess", sender: nil)
                 print(email, password)
                 
                 //Unncomment later fixing Signin or other screens
@@ -154,7 +167,7 @@ extension SignInFormViewController: UITableViewDataSource{
 //                }
                 
 //                if(self.isValidEmail(email) && password != ""){
-                    self.navigateToTabController()
+//                    self.navigateToTabController()
 //                }
                 
             }
